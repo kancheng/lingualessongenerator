@@ -1,4 +1,4 @@
-# polyLinguatts
+# lingualessongenerator
 
 多語面試講稿練習工具，使用瀏覽器內建 **Web Speech API** 朗讀。  
 從 JSON 載入中／英／日／德／法對照內容，依語種片段排隊發聲——無需後端、無需 API Key。

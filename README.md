@@ -1,4 +1,4 @@
-# polyLinguatts
+# lingualessongenerator
 
 Multilingual interview script practice powered by the browser **Web Speech API**.  
 Load line-by-line Chinese / English / Japanese / German / French content from JSON, then speak each segment with the correct language voice—no backend, no API key.
