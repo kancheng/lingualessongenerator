@@ -1,0 +1,335 @@
+{
+  "version": "1.0",
+  "meta": {
+    "title": {
+      "zh": "簡易自我介紹",
+      "en": "Brief Self-introduction"
+    },
+    "speaker": "Kan Horst",
+    "languages": [
+      "zh-TW",
+      "en-US",
+      "ja-JP",
+      "de-DE",
+      "fr-FR"
+    ],
+    "tts": "Web Speech API",
+    "source": "custom-editor"
+  },
+  "schema": {
+    "line": {
+      "id": "string",
+      "segments": [
+        {
+          "text": "string",
+          "lang": "BCP-47",
+          "role": "primary|translation"
+        }
+      ],
+      "hints": [
+        {
+          "type": "romaji|ipa",
+          "text": "string",
+          "lang": "BCP-47?"
+        }
+      ]
+    }
+  },
+  "tracks": [
+    {
+      "id": "zh-en-ja-de-fr",
+      "name": {
+        "zh": "自訂對照",
+        "en": "Custom"
+      },
+      "description": {
+        "zh": "使用者自訂的多語朗讀練習。",
+        "en": "Custom multilingual speaking practice."
+      },
+      "lines": [
+        {
+          "id": "simple-brief-self-introduction_001",
+          "segments": [
+            {
+              "text": "大家好！",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Hello everyone!",
+              "lang": "en-US",
+              "role": "translation"
+            },
+            {
+              "text": "みなさん、こんにちは！",
+              "lang": "ja-JP",
+              "role": "translation"
+            },
+            {
+              "text": "Hallo zusammen!",
+              "lang": "de-DE",
+              "role": "translation"
+            },
+            {
+              "text": "Bonjour à tous !",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Minasan, konnichiwa!",
+              "lang": "ja-JP"
+            },
+            {
+              "type": "ipa",
+              "text": "Halo tsu-za-men!",
+              "lang": "de-DE"
+            },
+            {
+              "type": "ipa",
+              "text": "Bon-zhoor ah toos!",
+              "lang": "fr-FR"
+            }
+          ]
+        },
+        {
+          "id": "simple-brief-self-introduction_002",
+          "segments": [
+            {
+              "text": "我叫 Kan，今年 32 歲。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "My name is Kan, and I am 32 years old.",
+              "lang": "en-US",
+              "role": "translation"
+            },
+            {
+              "text": "私の名前は Kan です。32歳です。",
+              "lang": "ja-JP",
+              "role": "translation"
+            },
+            {
+              "text": "Mein Name ist Kan, und ich bin 32 Jahre alt.",
+              "lang": "de-DE",
+              "role": "translation"
+            },
+            {
+              "text": "Je m’appelle Kan, j’ai 32 ans.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Watashi no namae wa Kan desu. Sanjūni-sai desu.",
+              "lang": "ja-JP"
+            },
+            {
+              "type": "ipa",
+              "text": "Main NAH-meh ist Kan, oond ich bin dreh-oon-tsvantsig yah-re alt.",
+              "lang": "de-DE"
+            },
+            {
+              "type": "ipa",
+              "text": "Zhuh mah-pel Kan, zhay trahn-teuh duh-zah.",
+              "lang": "fr-FR"
+            }
+          ]
+        },
+        {
+          "id": "simple-brief-self-introduction_003",
+          "segments": [
+            {
+              "text": "我住在中國深圳，出生於台灣桃園。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I live in Shenzhen, China, and I was born in Taoyuan, Taiwan.",
+              "lang": "en-US",
+              "role": "translation"
+            },
+            {
+              "text": "私は中国の深圳に住んでいて、台湾の桃園で生まれました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            },
+            {
+              "text": "Ich wohne in Shenzhen, China, und ich wurde in Taoyuan, Taiwan, geboren.",
+              "lang": "de-DE",
+              "role": "translation"
+            },
+            {
+              "text": "J’habite à Shenzhen, en Chine, et je suis né à Taoyuan, à Taïwan.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Watashi wa Chūgoku no Shēnzhèn ni sunde ite, Taiwan no Táoyuán de umaremashita.",
+              "lang": "ja-JP"
+            },
+            {
+              "type": "ipa",
+              "text": "Ich voh-neh in Shen-tschen, Chee-nah, oond ich voor-deh in Taoyuan, Tai-vahn, geh-bohr-en.",
+              "lang": "de-DE"
+            },
+            {
+              "type": "ipa",
+              "text": "Zhah-beet ah Shen-zenn, ahn Sheen, ay zhuh swee nay ah Taoyuan, ah Taï-wahn.",
+              "lang": "fr-FR"
+            }
+          ]
+        },
+        {
+          "id": "simple-brief-self-introduction_004",
+          "segments": [
+            {
+              "text": "曾經在台北擔任工程師，主要使用 Python 和 JavaScript。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I used to work as an engineer in Taipei, mainly focusing on Python and JavaScript.",
+              "lang": "en-US",
+              "role": "translation"
+            },
+            {
+              "text": "以前は台北でエンジニアとして働いていて、主に Python と JavaScript を使っていました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            },
+            {
+              "text": "Früher habe ich in Taipeh als Ingenieur gearbeitet, hauptsächlich mit Python und JavaScript.",
+              "lang": "de-DE",
+              "role": "translation"
+            },
+            {
+              "text": "J’ai travaillé à Taipei comme ingénieur, surtout avec Python et JavaScript.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Izen wa Taihoku de enjinia toshite hataraite ite, omo ni Python to JavaScript o tsukatte imashita.",
+              "lang": "ja-JP"
+            },
+            {
+              "type": "ipa",
+              "text": "Fruo-er hah-beh ich in Tai-peh als In-ge-nyoor geh-ar-bytet, hoipt-zekh-lich mit Python oond Yah-vah-Skript.",
+              "lang": "de-DE"
+            },
+            {
+              "type": "ipa",
+              "text": "Zhay travah-yay ah Tai-peh kom an-zhen-yur, soo-roo av-ek Python ay JavaScript.",
+              "lang": "fr-FR"
+            }
+          ]
+        },
+        {
+          "id": "simple-brief-self-introduction_005",
+          "segments": [
+            {
+              "text": "我的母語是中文普通話，也擅長英文。現在正在學習日文、德文和法文。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "My native language is Mandarin Chinese, and I am also fluent in English. Currently, I am learning Japanese, German, and French.",
+              "lang": "en-US",
+              "role": "translation"
+            },
+            {
+              "text": "母語は中国語（普通話）で、英語も得意です。今は日本語、ドイツ語、フランス語を勉強しています。",
+              "lang": "ja-JP",
+              "role": "translation"
+            },
+            {
+              "text": "Meine Muttersprache ist Mandarin-Chinesisch, und ich spreche auch gut Englisch. Zurzeit lerne ich Japanisch, Deutsch und Französisch.",
+              "lang": "de-DE",
+              "role": "translation"
+            },
+            {
+              "text": "Ma langue maternelle est le chinois mandarin, et je parle aussi bien anglais. En ce moment, j’apprends le japonais, l’allemand et le français.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Bogo wa Chūgokugo (Putonghua) de, Eigo mo tokui desu. Ima wa Nihongo, Doitsugo, Furansugo o benkyō shiteimasu.",
+              "lang": "ja-JP"
+            },
+            {
+              "type": "ipa",
+              "text": "My-neh Moo-ter-shprah-khe ist Mandarin-Chee-neh-sish, oond ich shpre-khe auch goot Englisch. Tsoor-tsite lair-neh ich Yah-pah-nish, Doytsh oond Frahn-tzoe-zish.",
+              "lang": "de-DE"
+            },
+            {
+              "type": "ipa",
+              "text": "Mah lahng ma-tehr-nel eh luh shee-nwah mahn-da-ranh, ay zhuh parl oh-see byan ahng-glay. Ahn suh mo-mon, zhah-prahn luh zhah-poh-neh, l’ahl-mahn ay luh frahn-say.",
+              "lang": "fr-FR"
+            }
+          ]
+        },
+        {
+          "id": "simple-brief-self-introduction_006",
+          "segments": [
+            {
+              "text": "那你呢？",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "How about you?",
+              "lang": "en-US",
+              "role": "translation"
+            },
+            {
+              "text": "あなたは？",
+              "lang": "ja-JP",
+              "role": "translation"
+            },
+            {
+              "text": "Und du?",
+              "lang": "de-DE",
+              "role": "translation"
+            },
+            {
+              "text": "Et toi ?",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Anata wa?",
+              "lang": "ja-JP"
+            },
+            {
+              "type": "ipa",
+              "text": "Oond du?",
+              "lang": "de-DE"
+            },
+            {
+              "type": "ipa",
+              "text": "Eh twa?",
+              "lang": "fr-FR"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

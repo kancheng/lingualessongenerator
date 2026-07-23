@@ -7,8 +7,10 @@ Load line-by-line Chinese / English / Japanese / German / French content from JS
 
 ## Features
 
-- Fetch and render multilingual script JSON
-- Track switcher: full Chinese, ZH–EN, ZH–JA, ZH–DE, ZH–FR
+- Load practice lessons by **auto-scanning** `data/lessons/` (**one JSON file = one lesson**; no manual manifest edits)
+- Lesson picker; deep-link with `?lesson=lesson-id`
+- **Custom content editor** (`editor.html`): guided form → official lesson JSON
+- Track switcher: full Chinese, ZH–EN, ZH–JA, ZH–DE, ZH–FR (depends on the lesson)
 - Per-line **Speak** button (queued segment TTS)
 - Click a single segment to practice that language only
 - On bilingual tracks: **Play all (both)**, **Play all Chinese**, or **Play all** of the paired language (EN / JA / DE / FR)
@@ -21,7 +23,7 @@ Load line-by-line Chinese / English / Japanese / German / French content from JS
 Requires Node.js 18+ (only for the static server and data rebuild).
 
 ```bash
-npm run build:data   # regenerate data/script.json from script.txt
+npm run build:data   # rebuild the default lesson under data/lessons/
 npm start            # serve at http://localhost:5173
 ```
 
@@ -41,14 +43,25 @@ python -m http.server 5173
 
 ```text
 polyLinguatts/
-├── index.html              # App shell
+├── index.html              # Practice UI (lesson picker + TTS)
+├── editor.html             # Custom content → JSON
 ├── css/styles.css          # Layout & visual system
 ├── js/
-│   ├── app.js              # Fetch JSON, render tracks/lines, bind UI
+│   ├── app.js              # Load lessons, render tracks/lines
+│   ├── editor.js           # Guided custom-content form
+│   ├── lessons.js          # Lesson loading, local saves
+│   ├── lessonBuilder.js    # Form ↔ JSON
 │   └── tts.js              # Web Speech API queue + voice picking
-├── data/script.json        # Canonical multilingual script data
-├── scripts/build-json.mjs  # script.txt → script.json
-├── script.txt              # Source bilingual / multilingual lines
+├── data/
+│   ├── lessons/
+│   │   ├── manifest.json   # Auto-generated (or live-scanned by npm start)
+│   │   └── *.json          # One file = one practice lesson
+│   └── script.json         # Legacy alias (written by build)
+├── scripts/
+│   ├── build-json.mjs      # script.txt → lessons + scan
+│   ├── scan-lessons.mjs    # Scan data/lessons/*.json
+│   └── serve.mjs           # Static server + live lesson scan
+├── script.txt              # Source for the default interview lesson
 ├── README.md               # English docs (this file)
 └── README.zh-TW.md         # Traditional Chinese docs
 ```
@@ -56,8 +69,8 @@ polyLinguatts/
 ## Architecture
 
 ```text
-[ data/script.json ]
-        │ fetch
+[ data/lessons/*.json ]  ← drop in to include (one file per lesson)
+        │ live scan on npm start / or write manifest.json
         ▼
 [ Frontend parse & render ] ── display text + Speak controls
         │ click
@@ -69,15 +82,42 @@ polyLinguatts/
 [ Browser TTS voices ]
 ```
 
+Custom content uses `editor.html`: form → same JSON contract → download into `data/lessons/` or keep in the browser.
+
 TTS uses **Scheme B** from the planning notes: segment the line by `lang`, create one `SpeechSynthesisUtterance` per segment, and play them in order. This is free, offline-capable (after voices are installed), and needs no server.
+
+## Lesson directory (`data/lessons`)
+
+The app **auto-scans** every `*.json` in this folder (skips `manifest.json`).
+
+- With `npm start`: each load rescans the folder — drop a file and refresh.
+- With another static server: run `npm run scan:lessons` (or `npm run build:data`) to write `manifest.json`.
+- Default lesson: `interview-self-intro.json` if present, otherwise the first scanned file.
+
+To add a packaged lesson: put the JSON in `data/lessons/`. **No** manual `manifest.json` edit.
+
+## Custom user content
+
+Open [editor.html](./editor.html) and follow three steps:
+
+1. Enter lesson metadata.
+2. Use **Add language** to include ZH / EN / JA / DE / FR columns. Paste multiline text (line 1 pairs with line 1). Per-language hint rows are optional. Each box shows its line count.
+3. **Convert / preview** to JSON, then:
+   - **Download JSON** → place `lesson-id.json` in `data/lessons/` and refresh
+   - **Save in browser** → available immediately in the practice picker (marked “Browser”)
+   - **Start practice** → auto-saves locally and returns to the practice page
+
+**Import JSON** to edit an existing lesson, then download again to overwrite the file.
 
 ## JSON format
 
-`data/script.json` is the runtime contract. Regenerate it any time with:
+Each lesson file uses the contract below (`data/lessons/*.json`). Regenerate the default interview lesson with:
 
 ```bash
 npm run build:data
 ```
+
+This writes `data/lessons/interview-self-intro.json`, auto-scans and writes `manifest.json`, and syncs the legacy path `data/script.json`.
 
 ### Top level
 
@@ -147,11 +187,19 @@ IPA lines in the source look like `[ˈɡuːtn̩ …]` and are stored without the
 
 ## Extending the content
 
+### A. Custom editor (typical users)
+
+See **Custom user content** above: form → JSON → download into `data/lessons/` or save in the browser.
+
+### B. Rebuild the default interview script
+
 1. Edit `script.txt` using the same block / pairing conventions.
 2. Run `npm run build:data`.
 3. Refresh the page.
 
-Or edit `data/script.json` directly—keep `lang` values as BCP-47 tags the browser understands.
+### C. Edit JSON directly
+
+Edit `data/lessons/<id>.json` (or the legacy `data/script.json`), keep BCP-47 `lang` tags the browser understands. Files in `data/lessons/` are picked up automatically.
 
 ## Browser support
 

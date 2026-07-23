@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { writeManifest } from "./scan-lessons.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -167,10 +168,24 @@ const data = {
 };
 
 const outDir = path.join(root, "data");
-fs.mkdirSync(outDir, { recursive: true });
-const outPath = path.join(outDir, "script.json");
-fs.writeFileSync(outPath, JSON.stringify(data, null, 2), "utf8");
+const lessonsDir = path.join(outDir, "lessons");
+fs.mkdirSync(lessonsDir, { recursive: true });
+
+const lessonId = "interview-self-intro";
+const lessonFile = `${lessonId}.json`;
+const lessonPath = path.join(lessonsDir, lessonFile);
+const legacyPath = path.join(outDir, "script.json");
+const payload = JSON.stringify(data, null, 2);
+
+fs.writeFileSync(lessonPath, payload, "utf8");
+fs.writeFileSync(legacyPath, payload, "utf8");
+
+const manifest = writeManifest(lessonsDir);
 
 const counts = tracks.map((t) => `${t.id}: ${t.lines.length} lines`).join(", ");
-console.log(`Wrote ${outPath}`);
+console.log(`Wrote ${lessonPath}`);
+console.log(`Wrote ${legacyPath} (legacy alias)`);
+console.log(
+  `Auto-scanned ${manifest.lessons.length} lesson(s); default=${manifest.default}`
+);
 console.log(counts);

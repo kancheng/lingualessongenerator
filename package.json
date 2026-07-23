@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Multilingual interview script practice with Web Speech API TTS",
+  "type": "module",
   "scripts": {
     "build:data": "node scripts/build-json.mjs",
-    "start": "npx --yes serve -l 5173 .",
+    "scan:lessons": "node scripts/scan-lessons.mjs",
+    "start": "node scripts/serve.mjs",
     "dev": "npm run build:data && npm start"
   },
   "engines": {

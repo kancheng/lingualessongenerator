@@ -7,8 +7,10 @@ English docs: [README.md](./README.md)
 
 ## 功能特色
 
-- 抓取並渲染多語講稿 JSON
-- 軌道切換：中文全文、中英、中日、中德、中法
+- 從 `data/lessons/` **自動掃描**練習課程（**一組 JSON = 一堂課**；無需手改 manifest）
+- 課程選擇器；可用 `?lesson=課程ID` 直接開啟
+- **自訂內容編輯器**（`editor.html`）：表單填多語文本 → 轉成正式 JSON
+- 軌道切換：中文全文、中英、中日、中德、中法（依各課程內容而定）
 - 每句 **朗讀** 按鈕（依片段語種排隊 TTS）
 - 點擊單一片段可只練習該語言
 - 雙語對照軌道可選：**朗讀全部（對照）**、**朗讀全部中文**、或只朗讀對照語（英／日／德／法）
@@ -21,7 +23,7 @@ English docs: [README.md](./README.md)
 需要 Node.js 18+（僅用於靜態伺服器與重建資料）。
 
 ```bash
-npm run build:data   # 從 script.txt 重新產生 data/script.json
+npm run build:data   # 從 script.txt 重建預設課程（data/lessons/…）
 npm start            # 於 http://localhost:5173 啟動
 ```
 
@@ -41,14 +43,25 @@ python -m http.server 5173
 
 ```text
 polyLinguatts/
-├── index.html              # 應用主頁
+├── index.html              # 練習主頁（課程選擇＋朗讀）
+├── editor.html             # 使用者自訂內容 → JSON
 ├── css/styles.css          # 版面與視覺
 ├── js/
-│   ├── app.js              # 抓取 JSON、渲染軌道／句子、綁定 UI
+│   ├── app.js              # 載入課程、渲染軌道／句子
+│   ├── editor.js           # 自訂內容表單與轉換
+│   ├── lessons.js          # 課程載入、本機暫存
+│   ├── lessonBuilder.js    # 表單 ↔ JSON
 │   └── tts.js              # Web Speech API 佇列與聲線選擇
-├── data/script.json        # 正式多語講稿資料
-├── scripts/build-json.mjs  # script.txt → script.json
-├── script.txt              # 原始對照講稿
+├── data/
+│   ├── lessons/
+│   │   ├── manifest.json   # 可由掃描自動產生（npm start 則即時掃描）
+│   │   └── *.json          # 每一檔 = 一堂練習課（放入即生效）
+│   └── script.json         # 舊路徑相容別名（由 build 同步寫出）
+├── scripts/
+│   ├── build-json.mjs      # script.txt → lessons + 掃描
+│   ├── scan-lessons.mjs    # 掃描 data/lessons/*.json
+│   └── serve.mjs           # 靜態伺服＋即時掃描課程目錄
+├── script.txt              # 預設課程原始對照講稿
 ├── README.md               # 英文文件
 └── README.zh-TW.md         # 繁體中文文件（本檔）
 ```
@@ -56,8 +69,8 @@ polyLinguatts/
 ## 系統架構
 
 ```text
-[ data/script.json ]
-        │ fetch
+[ data/lessons/*.json ]  ← 放入即自動納入（一檔一堂課）
+        │ npm start 即時掃描 / 或寫入 manifest.json
         ▼
 [ 前端解析與渲染 ] ── 顯示多語文本 + 朗讀按鈕
         │ 點擊
@@ -69,15 +82,42 @@ polyLinguatts/
 [ 瀏覽器內建 TTS 聲線 ]
 ```
 
+自訂內容另走 `editor.html`：表單 → 相同 JSON 契約 → 下載進 `data/lessons/` 或先存瀏覽器。
+
 依規劃採用 **方案 B**：依 JSON 的 `lang` 分段，建立多個 `SpeechSynthesisUtterance`，再依序加入語音佇列。完全免費、免架伺服器。
+
+## 課程目錄（data/lessons）
+
+執行期從此目錄**自動掃描**所有 `*.json`（略過 `manifest.json`）。
+
+- 使用 `npm start`：每次載入會即時掃描資料夾，放入新檔後重新整理即可。
+- 使用其他靜態伺服器：先執行 `npm run scan:lessons`（或 `npm run build:data`）寫出 `manifest.json`。
+- 預設課程：若存在 `interview-self-intro.json` 則優先，否則取掃描到的第一個。
+
+新增正式課程：把 JSON 放進 `data/lessons/` 即可，**不必**手改 `manifest.json`。
+
+## 使用者自訂內容
+
+開啟 [editor.html](./editor.html)，依三步驟操作：
+
+1. 填寫課程資訊。
+2. 用「新增語言」增減語言欄（ZH／EN／JA／DE／FR），各貼多行文本（第 1 行對第 1 行）；每種語言可「加入提示」或省略。輸入框旁會顯示行數。
+3. **轉換預覽** 產生 JSON，然後：
+   - **下載 JSON**：存成 `課程ID.json`，放到 `data/lessons/` 後重新整理
+   - **存到瀏覽器**：立刻可在練習頁選取（標記為「瀏覽器」）
+   - **開始練習**：自動暫存後回到練習頁
+
+也可 **匯入 JSON** 再開編輯，方便修改既有課程後重新下載覆蓋。
 
 ## JSON 格式規範
 
-執行期契約為 `data/script.json`。修改原文後可執行：
+每一堂課的執行期契約與下方相同（檔案位於 `data/lessons/*.json`）。修改預設原文後可執行：
 
 ```bash
 npm run build:data
 ```
+
+這會寫入 `data/lessons/interview-self-intro.json`、自動掃描並寫出 `manifest.json`，並同步舊路徑 `data/script.json`。
 
 ### 頂層欄位
 
@@ -147,11 +187,19 @@ npm run build:data
 
 ## 擴充內容
 
+### 方式 A：自訂編輯器（一般使用者）
+
+見上方「使用者自訂內容」：表單 → JSON → 下載進 `data/lessons/` 或存瀏覽器。
+
+### 方式 B：重建預設面試講稿
+
 1. 依相同區塊／對照慣例編輯 `script.txt`。
 2. 執行 `npm run build:data`。
 3. 重新整理網頁。
 
-也可直接編輯 `data/script.json`，請維持瀏覽器可識別的 BCP-47 `lang` 值。
+### 方式 C：直接改 JSON
+
+編輯 `data/lessons/<id>.json`（或相容路徑 `data/script.json`），維持瀏覽器可識別的 BCP-47 `lang` 值。放入 `data/lessons/` 後會自動被掃描。
 
 ## 瀏覽器支援
 

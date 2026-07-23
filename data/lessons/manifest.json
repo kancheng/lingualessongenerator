@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "directory": "data/lessons",
+  "scanned": true,
+  "default": "interview-self-intro",
+  "lessons": [
+    {
+      "id": "interview-self-intro",
+      "file": "interview-self-intro.json",
+      "title": {
+        "zh": "多語面試自我介紹",
+        "en": "Multilingual Interview Self-Introduction"
+      },
+      "speaker": "Haocheng Kan / 干皓丞"
+    },
+    {
+      "id": "simple-brief-self-introduction",
+      "file": "simple-brief-self-introduction.json",
+      "title": {
+        "zh": "簡易自我介紹",
+        "en": "Brief Self-introduction"
+      },
+      "speaker": "Kan Horst"
+    }
+  ]
+}

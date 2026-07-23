@@ -1,6 +1,11 @@
 import { MultilingualTTS } from "./tts.js";
+import {
+  loadManifest,
+  listAllLessons,
+  loadLessonById,
+  resolveDefaultLessonId,
+} from "./lessons.js";
 
-const DATA_URL = "./data/script.json";
 const LANG_LABEL = {
   "zh-TW": "ZH",
   "en-US": "EN",
@@ -21,9 +26,11 @@ const UI = {
   zh: {
     tagline: "多語講稿 · 分段朗讀",
     headline: "一句一句練，母語發音直接說。",
-    lead: "從 JSON 載入中／英／日／德／法對照講稿，點擊朗讀即可用瀏覽器原生語音依語種發聲。",
+    lead: "從 data/lessons 載入練習課程 JSON（一檔一堂課），點擊朗讀即可用瀏覽器原生語音依語種發聲。",
     ctaStart: "開始練習",
     ctaDocs: "查看文件",
+    ctaEditor: "自訂內容",
+    lessons: "練習課程",
     tracks: "語言軌道",
     playAll: "朗讀全部",
     playAllPair: "朗讀全部（對照）",
@@ -37,14 +44,17 @@ const UI = {
     speakLine: "朗讀此句",
     hintRomaji: "羅馬拼音",
     hintIpa: "音標",
-    footer: "零後端 · Web Speech API · 資料來自 script.json",
+    footer: "零後端 · Web Speech API · 課程來自 data/lessons",
+    localBadge: "瀏覽器",
   },
   en: {
     tagline: "Multilingual script · Segmented TTS",
     headline: "Practice line by line. Hear each language natively.",
-    lead: "Load Chinese / English / Japanese / German / French pairs from JSON, then speak each segment with the browser’s built-in voices.",
+    lead: "Load practice lessons from data/lessons (one JSON file per lesson), then speak each segment with the browser’s built-in voices.",
     ctaStart: "Start practicing",
     ctaDocs: "Documentation",
+    ctaEditor: "Custom content",
+    lessons: "Lessons",
     tracks: "Tracks",
     playAll: "Play all",
     playAllPair: "Play all (both)",
@@ -58,13 +68,17 @@ const UI = {
     speakLine: "Speak this line",
     hintRomaji: "Romaji",
     hintIpa: "IPA",
-    footer: "Zero backend · Web Speech API · Data from script.json",
+    footer: "Zero backend · Web Speech API · Lessons from data/lessons",
+    localBadge: "Browser",
   },
 };
 
 const state = {
   data: null,
   trackId: null,
+  lessonId: null,
+  manifest: null,
+  catalog: [],
   uiLang: localStorage.getItem("plt-ui") || "zh",
   tts: new MultilingualTTS(),
 };
@@ -86,6 +100,8 @@ function applyChromeCopy() {
   $("[data-i18n='lead']").textContent = t("lead");
   $("[data-i18n='ctaStart']").textContent = t("ctaStart");
   $("[data-i18n='ctaDocs']").textContent = t("ctaDocs");
+  $("[data-i18n='ctaEditor']").textContent = t("ctaEditor");
+  $("[data-i18n='lessons']").textContent = t("lessons");
   $("[data-i18n='tracks']").textContent = t("tracks");
   $("[data-i18n='stop']").textContent = t("stop");
   $("[data-i18n='rate']").textContent = t("rate");
@@ -109,6 +125,7 @@ function applyChromeCopy() {
     );
   });
 
+  renderLessonSelect();
   renderPlayScope();
 }
 
@@ -138,6 +155,50 @@ function trackLanguages(track) {
 
 function langDisplayName(lang) {
   return localize(LANG_NAME[lang]) || LANG_LABEL[lang] || lang;
+}
+
+function renderLessonSelect() {
+  const select = $("#lesson-select");
+  if (!select) return;
+
+  const previous = state.lessonId;
+  select.innerHTML = "";
+
+  for (const lesson of state.catalog) {
+    const opt = document.createElement("option");
+    opt.value = lesson.id;
+    const title = localize(lesson.title) || lesson.id;
+    const badge =
+      lesson.source === "local" ? ` · ${t("localBadge")}` : "";
+    opt.textContent = `${title}${badge}`;
+    select.appendChild(opt);
+  }
+
+  if (previous && state.catalog.some((l) => l.id === previous)) {
+    select.value = previous;
+  } else if (state.catalog[0]) {
+    select.value = state.catalog[0].id;
+  }
+}
+
+async function selectLesson(id) {
+  if (!id || !state.manifest) return;
+  state.tts.stop();
+  state.data = await loadLessonById(state.manifest, id);
+  state.lessonId = id;
+  localStorage.setItem("plt-lesson", id);
+  state.trackId = state.data.tracks[0]?.id ?? null;
+  $("#meta-speaker").textContent = state.data.meta?.speaker || "—";
+  const titleEl = $("#meta-title");
+  if (titleEl) titleEl.textContent = localize(state.data.meta?.title) || id;
+  renderLessonSelect();
+  renderTracks();
+  renderPanel();
+  renderPlayScope();
+
+  const url = new URL(location.href);
+  url.searchParams.set("lesson", id);
+  history.replaceState(null, "", url);
 }
 
 function renderPlayScope() {
@@ -255,7 +316,8 @@ function renderPanel() {
         const pill = document.createElement("p");
         pill.className = `hint hint--${h.type}`;
         const label = h.type === "ipa" ? t("hintIpa") : t("hintRomaji");
-        pill.innerHTML = `<span>${label}</span> ${escapeHtml(h.text)}`;
+        const langBit = h.lang ? ` · ${LANG_LABEL[h.lang] || h.lang}` : "";
+        pill.innerHTML = `<span>${label}${langBit}</span> ${escapeHtml(h.text)}`;
         hints.appendChild(pill);
       });
       body.appendChild(hints);
@@ -328,6 +390,16 @@ function bindControls() {
     $("#workspace").scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
+  $("#lesson-select")?.addEventListener("change", async (e) => {
+    try {
+      await selectLesson(e.target.value);
+    } catch (err) {
+      console.error(err);
+      $("#banner").hidden = false;
+      $("#banner").textContent = t("loadError");
+    }
+  });
+
   state.tts.onStateChange(() => syncPlayingUI());
 }
 
@@ -341,13 +413,11 @@ async function boot() {
   }
 
   try {
-    const res = await fetch(DATA_URL);
-    if (!res.ok) throw new Error(String(res.status));
-    state.data = await res.json();
-    state.trackId = state.data.tracks[0]?.id ?? null;
-    $("#meta-speaker").textContent = state.data.meta.speaker;
-    renderTracks();
-    renderPanel();
+    state.manifest = await loadManifest();
+    state.catalog = listAllLessons(state.manifest);
+    const lessonId = resolveDefaultLessonId(state.manifest, state.catalog);
+    if (!lessonId) throw new Error("no lessons");
+    await selectLesson(lessonId);
   } catch (err) {
     console.error(err);
     $("#banner").hidden = false;

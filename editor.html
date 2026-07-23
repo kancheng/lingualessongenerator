@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="polyLinguatts — create custom multilingual practice lessons as JSON."
+    />
+    <title>polyLinguatts — 自訂課程</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="./">
+          <span class="brand__mark">polyLingua</span><span class="brand__tts">tts</span>
+        </a>
+        <div class="topbar__actions">
+          <a class="btn btn--ghost btn--compact" href="./" data-i18n="backPractice">回練習頁</a>
+          <div class="lang-switch" role="group" aria-label="UI language">
+            <button type="button" data-ui-lang="zh" aria-pressed="true">中文</button>
+            <button type="button" data-ui-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="editor-hero" aria-labelledby="editor-title">
+        <p class="hero__tag" data-i18n="tagline">使用者自訂內容</p>
+        <h1 class="editor-hero__title" id="editor-title" data-i18n="title">
+          依指示填寫，產出一堂練習 JSON
+        </h1>
+        <p class="editor-hero__lead" data-i18n="lead">
+          自行增減語言欄，各貼多行文本（第 N 行互相對應）。每種語言的提示列可加可不加。完成後可下載到
+          <code>data/lessons/</code>，或先存在瀏覽器內練習。
+        </p>
+      </section>
+
+      <ol class="guide" aria-label="Steps">
+        <li data-i18n="step1">填寫課程資訊</li>
+        <li data-i18n="step2">新增語言欄、貼上多行文本；提示列可選</li>
+        <li data-i18n="step3">預覽 JSON → 下載檔案或儲存後開始練習</li>
+      </ol>
+
+      <div id="banner" class="banner" hidden></div>
+
+      <main class="editor">
+        <section class="editor-block" aria-labelledby="meta-heading">
+          <h2 id="meta-heading" data-i18n="metaHeading">1. 課程資訊</h2>
+          <div class="form-grid">
+            <label class="field">
+              <span data-i18n="fieldId">課程 ID（檔名用）</span>
+              <input id="field-id" type="text" autocomplete="off" placeholder="my-lesson" />
+            </label>
+            <label class="field">
+              <span data-i18n="fieldSpeaker">講者</span>
+              <input id="field-speaker" type="text" autocomplete="name" />
+            </label>
+            <label class="field">
+              <span data-i18n="fieldTitleZh">標題（中文）</span>
+              <input id="field-title-zh" type="text" />
+            </label>
+            <label class="field">
+              <span data-i18n="fieldTitleEn">標題（English）</span>
+              <input id="field-title-en" type="text" />
+            </label>
+            <label class="field">
+              <span data-i18n="fieldTrackZh">軌道名稱（中文）</span>
+              <input id="field-track-zh" type="text" />
+            </label>
+            <label class="field">
+              <span data-i18n="fieldTrackEn">軌道名稱（English）</span>
+              <input id="field-track-en" type="text" />
+            </label>
+            <label class="field field--full">
+              <span data-i18n="fieldDescZh">軌道說明（中文）</span>
+              <input id="field-desc-zh" type="text" />
+            </label>
+            <label class="field field--full">
+              <span data-i18n="fieldDescEn">軌道說明（English）</span>
+              <input id="field-desc-en" type="text" />
+            </label>
+          </div>
+        </section>
+
+        <section class="editor-block" aria-labelledby="lines-heading">
+          <div class="editor-block__head">
+            <h2 id="lines-heading" data-i18n="linesHeading">2. 多語語音文本</h2>
+            <div class="lang-add">
+              <label class="visually-hidden" for="add-lang" data-i18n="addLang">新增語言</label>
+              <select id="add-lang"></select>
+              <button type="button" class="btn btn--soft btn--compact" id="btn-add-lang" data-i18n="addLang">
+                新增語言
+              </button>
+            </div>
+          </div>
+          <p class="editor-hint" data-i18n="linesHint">
+            每個語言欄各放多行；第 1 行對第 1 行。可為該語言「加入提示」或省略；提示不送進 TTS。
+          </p>
+          <div id="columns-host" class="bulk-grid"></div>
+        </section>
+
+        <section class="editor-block" aria-labelledby="json-heading">
+          <div class="editor-block__head">
+            <h2 id="json-heading" data-i18n="jsonHeading">3. JSON 預覽與存檔</h2>
+            <div class="editor-actions">
+              <button type="button" class="btn btn--soft" id="btn-preview" data-i18n="preview">
+                轉換預覽
+              </button>
+              <button type="button" class="btn btn--soft" id="btn-import" data-i18n="importJson">
+                匯入 JSON
+              </button>
+              <input id="import-file" type="file" accept="application/json,.json" hidden />
+            </div>
+          </div>
+          <pre id="json-preview" class="json-preview" aria-live="polite"></pre>
+          <div class="editor-actions editor-actions--footer">
+            <button type="button" class="btn btn--ghost" id="btn-download" data-i18n="download">
+              下載 JSON
+            </button>
+            <button type="button" class="btn btn--ghost" id="btn-save-local" data-i18n="saveLocal">
+              存到瀏覽器
+            </button>
+            <a class="btn btn--primary" id="btn-practice" href="./" data-i18n="practice"
+              >開始練習</a
+            >
+          </div>
+          <p class="editor-hint" data-i18n="saveHint">
+            正式課程：把下載的 <code>*.json</code> 放到 <code>data/lessons/</code> 後重新整理即可（目錄會自動掃描）。
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p data-i18n="footer">自訂內容會轉成與正式課程相同的 JSON 契約</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/editor.js"></script>
+  </body>
+</html>

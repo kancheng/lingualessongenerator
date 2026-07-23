@@ -35,6 +35,7 @@
           <a class="btn btn--primary" id="cta-start" href="#workspace" data-i18n="ctaStart"
             >開始練習</a
           >
+          <a class="btn btn--ghost" href="./editor.html" data-i18n="ctaEditor">自訂內容</a>
           <a class="btn btn--ghost" id="cta-docs" href="./README.zh-TW.md" data-i18n="ctaDocs"
             >查看文件</a
           >
@@ -44,7 +45,19 @@
       <main id="workspace" class="workspace">
         <div id="banner" class="banner" hidden></div>
 
-        <p class="workspace__speaker"><span id="meta-speaker">—</span></p>
+        <div class="workspace__meta">
+          <div>
+            <p class="panel__label" data-i18n="lessons">練習課程</p>
+            <label class="lesson-picker">
+              <span class="visually-hidden" data-i18n="lessons">練習課程</span>
+              <select id="lesson-select"></select>
+            </label>
+          </div>
+          <div class="workspace__meta-text">
+            <p class="workspace__title" id="meta-title">—</p>
+            <p class="workspace__speaker"><span id="meta-speaker">—</span></p>
+          </div>
+        </div>
 
         <section class="panel" aria-label="Script workspace">
           <div class="panel__toolbar">
@@ -71,7 +84,7 @@
       </main>
 
       <footer class="site-footer">
-        <p data-i18n="footer">零後端 · Web Speech API · 資料來自 script.json</p>
+        <p data-i18n="footer">零後端 · Web Speech API · 課程來自 data/lessons</p>
       </footer>
     </div>
 
