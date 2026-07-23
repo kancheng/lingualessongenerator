@@ -36,10 +36,12 @@ const UI = {
     playAllPair: "朗讀全部（對照）",
     playAllLang: "朗讀全部{lang}",
     stop: "停止",
+    loop: "重複播放",
     rate: "語速",
     unsupported: "此瀏覽器不支援 Web Speech API，請改用 Chrome、Edge 或 Safari。",
     loadError: "無法載入講稿資料。",
     speaking: "朗讀中…",
+    speakingLoop: "循環朗讀中…",
     speak: "朗讀",
     speakLine: "朗讀此句",
     hintRomaji: "羅馬拼音",
@@ -60,10 +62,12 @@ const UI = {
     playAllPair: "Play all (both)",
     playAllLang: "Play all {lang}",
     stop: "Stop",
+    loop: "Loop",
     rate: "Rate",
     unsupported: "Web Speech API is not supported. Please use Chrome, Edge, or Safari.",
     loadError: "Failed to load script data.",
     speaking: "Speaking…",
+    speakingLoop: "Looping…",
     speak: "Speak",
     speakLine: "Speak this line",
     hintRomaji: "Romaji",
@@ -95,17 +99,32 @@ function localize(obj) {
 }
 
 function applyChromeCopy() {
-  $("[data-i18n='tagline']").textContent = t("tagline");
-  $("[data-i18n='headline']").textContent = t("headline");
-  $("[data-i18n='lead']").textContent = t("lead");
-  $("[data-i18n='ctaStart']").textContent = t("ctaStart");
-  $("[data-i18n='ctaDocs']").textContent = t("ctaDocs");
-  $("[data-i18n='ctaEditor']").textContent = t("ctaEditor");
-  $("[data-i18n='lessons']").textContent = t("lessons");
-  $("[data-i18n='tracks']").textContent = t("tracks");
-  $("[data-i18n='stop']").textContent = t("stop");
-  $("[data-i18n='rate']").textContent = t("rate");
-  $("[data-i18n='footer']").textContent = t("footer");
+  const keys = [
+    "tagline",
+    "headline",
+    "lead",
+    "ctaStart",
+    "ctaDocs",
+    "ctaEditor",
+    "lessons",
+    "tracks",
+    "stop",
+    "loop",
+    "rate",
+    "footer",
+  ];
+  for (const key of keys) {
+    const text = t(key);
+    if (text == null) continue;
+    document.querySelectorAll(`[data-i18n="${key}"]`).forEach((el) => {
+      el.textContent = text;
+    });
+  }
+
+  const loopBtn = $("#btn-loop");
+  if (loopBtn) {
+    loopBtn.setAttribute("aria-pressed", state.tts.loop ? "true" : "false");
+  }
 
   document.documentElement.lang = state.uiLang === "zh" ? "zh-Hant" : "en";
   document.title =
@@ -185,10 +204,14 @@ async function selectLesson(id) {
   if (!id || !state.manifest) return;
   state.tts.stop();
   state.data = await loadLessonById(state.manifest, id);
+  if (!state.data?.tracks?.length) {
+    throw new Error("lesson has no tracks");
+  }
   state.lessonId = id;
   localStorage.setItem("plt-lesson", id);
   state.trackId = state.data.tracks[0]?.id ?? null;
-  $("#meta-speaker").textContent = state.data.meta?.speaker || "—";
+  const speakerEl = $("#meta-speaker");
+  if (speakerEl) speakerEl.textContent = state.data.meta?.speaker || "—";
   const titleEl = $("#meta-title");
   if (titleEl) titleEl.textContent = localize(state.data.meta?.title) || id;
   renderLessonSelect();
@@ -235,6 +258,10 @@ function renderPlayScope() {
 
 function renderTracks() {
   const nav = $("#track-nav");
+  if (!nav || !state.data?.tracks) {
+    if (nav) nav.innerHTML = "";
+    return;
+  }
   nav.innerHTML = "";
 
   state.data.tracks.forEach((track) => {
@@ -258,19 +285,21 @@ function renderTracks() {
 function renderPanel() {
   const track = currentTrack();
   const panel = $("#script-panel");
+  if (!panel) return;
   if (!track) {
     panel.innerHTML = "";
     return;
   }
 
-  $("#track-desc").textContent = localize(track.description);
+  const desc = $("#track-desc");
+  if (desc) desc.textContent = localize(track.description);
   renderPlayScope();
 
   panel.innerHTML = "";
   const list = document.createElement("ol");
   list.className = "line-list";
 
-  track.lines.forEach((line, index) => {
+  (track.lines || []).forEach((line, index) => {
     const li = document.createElement("li");
     li.className = "line";
     li.dataset.lineId = line.id;
@@ -297,14 +326,16 @@ function renderPanel() {
     const body = document.createElement("div");
     body.className = "line__body";
 
-    line.segments.forEach((seg) => {
+    (line.segments || []).forEach((seg) => {
+      if (!seg?.text) return;
+      const lang = seg.lang || "und";
       const row = document.createElement("button");
       row.type = "button";
-      row.className = `segment segment--${seg.lang.split("-")[0]}`;
-      row.title = `${t("speak")} (${seg.lang})`;
-      row.innerHTML = `<span class="segment__lang">${LANG_LABEL[seg.lang] || seg.lang}</span><span class="segment__text">${escapeHtml(seg.text)}</span>`;
+      row.className = `segment segment--${lang.split("-")[0]}`;
+      row.title = `${t("speak")} (${lang})`;
+      row.innerHTML = `<span class="segment__lang">${LANG_LABEL[lang] || lang}</span><span class="segment__text">${escapeHtml(seg.text)}</span>`;
       row.addEventListener("click", () => {
-        state.tts.speak([seg], `${line.id}:${seg.lang}`);
+        state.tts.speak([{ ...seg, lang }], `${line.id}:${lang}`);
       });
       body.appendChild(row);
     });
@@ -347,7 +378,7 @@ function syncPlayingUI() {
   const badge = $("#status-badge");
   if (id) {
     badge.hidden = false;
-    badge.textContent = t("speaking");
+    badge.textContent = state.tts.loop ? t("speakingLoop") : t("speaking");
   } else {
     badge.hidden = true;
   }
@@ -369,10 +400,20 @@ function playAll(scope = "all") {
 }
 
 function bindControls() {
-  $("#btn-stop").addEventListener("click", () => state.tts.stop());
-  $("#rate").addEventListener("input", (e) => {
+  $("#btn-stop")?.addEventListener("click", () => state.tts.stop());
+  $("#btn-loop")?.addEventListener("click", () => {
+    state.tts.setLoop(!state.tts.loop);
+    localStorage.setItem("plt-loop", state.tts.loop ? "1" : "0");
+    const btn = $("#btn-loop");
+    btn?.setAttribute("aria-pressed", state.tts.loop ? "true" : "false");
+    syncPlayingUI();
+  });
+  $("#rate")?.addEventListener("input", (e) => {
     state.tts.setRate(e.target.value);
-    $("#rate-value").textContent = `${Number(e.target.value).toFixed(1)}×`;
+    const rateValue = $("#rate-value");
+    if (rateValue) {
+      rateValue.textContent = `${Number(e.target.value).toFixed(1)}×`;
+    }
   });
 
   document.querySelectorAll("[data-ui-lang]").forEach((btn) => {
@@ -404,6 +445,7 @@ function bindControls() {
 }
 
 async function boot() {
+  state.tts.setLoop(localStorage.getItem("plt-loop") === "1");
   applyChromeCopy();
   bindControls();
 

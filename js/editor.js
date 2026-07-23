@@ -234,18 +234,16 @@ function updateLinedField(editorOrRoot) {
   );
   if (countEl) countEl.textContent = formatLineCount(displayCount);
 
-  // One hard newline → one gutter row → height grows by exactly one line.
-  const styles = getComputedStyle(ta);
-  const fontSize = Number.parseFloat(styles.fontSize) || 14.72;
-  const lineHeight = Number.parseFloat(styles.lineHeight) || fontSize * 1.55;
-  const padY =
-    (Number.parseFloat(styles.paddingTop) || 0) +
-    (Number.parseFloat(styles.paddingBottom) || 0);
-  const heightPx = Math.ceil(padY + gutterLines * lineHeight);
-  ta.style.height = `${heightPx}px`;
-  gutter.style.height = `${heightPx}px`;
-  gutter.scrollTop = 0;
-  ta.scrollTop = 0;
+  // Prefer native rows sizing so text is never clipped by a bad px height.
+  ta.style.height = "";
+  ta.rows = gutterLines;
+
+  const syncHeight = () => {
+    const h = Math.max(ta.scrollHeight, ta.clientHeight);
+    gutter.style.height = `${h}px`;
+  };
+  syncHeight();
+  requestAnimationFrame(syncHeight);
 }
 
 function bindLinedEditor(wrapper) {

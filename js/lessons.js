@@ -81,14 +81,19 @@ export function listAllLessons(manifest) {
  * @param {string} id
  */
 export async function loadLessonById(manifest, id) {
+  // Packaged files always win over browser-local drafts with the same id.
+  const entry = (manifest.lessons || []).find((l) => l.id === id);
+  if (entry || !readLocalLessons()[id]) {
+    const file = entry?.file || `${id}.json`;
+    const res = await fetch(`${LESSONS_DIR}/${file}`);
+    if (res.ok) return res.json();
+    if (entry) throw new Error(`lesson ${file} ${res.status}`);
+  }
+
   const local = readLocalLessons();
   if (local[id]) return structuredClone(local[id]);
 
-  const entry = (manifest.lessons || []).find((l) => l.id === id);
-  const file = entry?.file || `${id}.json`;
-  const res = await fetch(`${LESSONS_DIR}/${file}`);
-  if (!res.ok) throw new Error(`lesson ${file} ${res.status}`);
-  return res.json();
+  throw new Error(`Unknown lesson: ${id}`);
 }
 
 /**

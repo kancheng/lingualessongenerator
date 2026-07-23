@@ -553,7 +553,7 @@ a {
 .lined-editor__mirror {
   margin: 0;
   border: 0;
-  resize: none;
+  resize: vertical;
   min-width: 0;
   max-width: 100%;
   padding: var(--lined-pad-y) var(--lined-pad-x);
@@ -563,11 +563,11 @@ a {
   color: var(--ink);
   background: transparent;
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: auto;
   white-space: pre;
   tab-size: 2;
   box-sizing: border-box;
+  field-sizing: content;
 }
 
 .lined-editor__input:focus {
@@ -577,8 +577,6 @@ a {
 
 .lined-editor__mirror {
   color: var(--ink-soft);
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .bulk-hint {
@@ -765,6 +763,12 @@ a {
 .btn--soft {
   background: #fff;
   border-color: var(--line);
+}
+
+.btn--ghost[aria-pressed="true"] {
+  background: var(--sea);
+  border-color: var(--sea);
+  color: #fff;
 }
 
 /* —— Workspace —— */
