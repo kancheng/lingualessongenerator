@@ -1,0 +1,464 @@
+
+
+======================================================================================
+
+大家好，我是干皓丞，很高興今天有機會參加面試。我來自台灣桃園，畢業於北京大學計算機相關專業碩士，研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。
+
+這是我的第二個碩士學位。在研究所期間，我主要探討如何在保護病患資料與使用者隱私的前提下，利用人工智慧進行醫療影像分析。同時，我也在富士康參與工業人工智慧專案，負責影像檢測、自動化流程，以及相關系統開發。
+
+我認為學術研究和工業應用最大的差異在於，研究比較重視方法創新、模型表現與資料隱私；工業現場則更重視系統穩定性、執行效率，以及如何在有限的硬體與生產條件下，真正把人工智慧導入產線。
+
+在技術方面，我主要使用 Python、C# 和相關影像處理工具。工作中，我不只負責軟體和人工智慧模型的開發，也經常需要找出系統真正的問題。例如，當影像檢測結果異常時，我會從相機、光源、電腦、網路、軟體設定，到整體生產流程逐一檢查，進行系統性的故障排除。
+
+我另外一個碩士學位是台灣龍華科技大學的資訊管理碩士，研究方向是資料科學與數據分析。在更早期的工作經驗中，我也曾從事 Web 前後端開發，以及 Linux 伺服器和網路環境的維護。
+
+整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。我希望未來能把這些經驗運用在實際工作中，協助團隊提升系統穩定性、生產效率與技術落地能力。謝謝。
+
+
+======================================================================================
+
+大家好，我是干皓丞。
+Hello, everyone. My name is Haocheng Kan.
+
+很高興今天有機會參加面試。
+I am very happy to have this interview opportunity today.
+
+我來自台灣桃園。
+I am from Taoyuan, Taiwan.
+
+我畢業於北京大學，取得計算機相關專業的碩士學位。
+I earned a master’s degree in Computer Science from Peking University.
+
+我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。
+My main research areas are artificial intelligence, medical image analysis, and federated learning.
+
+這是我的第二個碩士學位。
+This is my second master’s degree.
+
+在研究所期間，我主要研究如何使用人工智慧分析醫療影像。
+During my graduate studies, I mainly studied how to use AI to analyze medical images.
+
+同時，我也重視病患資料和個人隱私的保護。
+At the same time, I focused on protecting patient data and personal privacy.
+
+除了學術研究之外，我也在富士康參與工業人工智慧專案。
+Besides academic research, I also worked on industrial AI projects at Foxconn.
+
+我的工作主要包括影像檢測、自動化流程，以及相關系統開發。
+My work mainly included image inspection, process automation, and system development.
+
+我認為學術研究和工業應用之間有一些明顯的差異。
+I believe there are some clear differences between academic research and industrial applications.
+
+學術研究比較重視新的方法、模型表現，以及資料隱私。
+Academic research focuses more on new methods, model performance, and data privacy.
+
+工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。
+Industrial work focuses more on system stability, running speed, and practical results.
+
+我們也需要考慮有限的硬體資源和實際的生產環境。
+We also need to consider limited hardware resources and real production conditions.
+
+最重要的是，要讓人工智慧真正能夠在生產線上運作。
+Most importantly, we need to make AI work well on the production line.
+
+在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。
+For my technical skills, I mainly use Python, C#, and image processing tools.
+
+在工作中，我不只負責軟體和人工智慧模型的開發。
+At work, I am not only responsible for software and AI model development.
+
+我也經常需要找出系統真正的問題。
+I also need to find the real cause of system problems.
+
+例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。
+For example, when the image inspection result is not correct, I check each part step by step.
+
+我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。
+I check the camera, lighting, computer, network, software settings, and the whole production process.
+
+透過這樣的方式，我可以進行完整的問題排除。
+In this way, I can troubleshoot the whole system.
+
+我的另一個碩士學位來自台灣的龍華科技大學。
+My other master’s degree is from Lunghwa University of Science and Technology in Taiwan.
+
+我的專業是資訊管理，研究方向是資料科學和數據分析。
+My major was Information Management, and my research focused on data science and data analysis.
+
+在更早期的工作經驗中，我也從事過 Web 前端和後端開發。
+In my earlier work experience, I also worked on front-end and back-end web development.
+
+我也有維護 Linux 伺服器和網路環境的經驗。
+I also have experience maintaining Linux servers and network environments.
+
+整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。
+Overall, my background combines AI research, industrial system development, and on-site troubleshooting.
+
+我希望未來能把這些經驗運用在實際工作中。
+I hope to use these experiences in my future work.
+
+我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。
+I also hope to help the team improve system stability, production efficiency, and the practical use of AI.
+
+謝謝。
+Thank you.
+
+
+======================================================================================
+
+大家好，我是干皓丞。
+皆さん、こんにちは。カン・ハオチェンと申します。
+Minasan, konnichiwa. Kan Haochen to moshimasu.
+
+很高興今天有機會參加面試。
+本日は面接の機会をいただき、ありがとうございます。
+Honjitsu wa mensetsu no kikai o itadaki, arigato gozaimasu.
+
+我來自台灣桃園。
+台湾の桃園出身です。
+Taiwan no Taoyuan shusshin desu.
+
+我畢業於北京大學，取得計算機相關專業的碩士學位。
+北京大学でコンピューター分野の修士号を取得しました。
+Pekin Daigaku de konpyuta bunya no shushigo o shutoku shimashita.
+
+我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。
+主な研究分野は、人工知能、医療画像分析、連合学習です。
+Omona kenkyu bunya wa, jinko chino, iryo gazo bunseki, rengo gakushu desu.
+
+這是我的第二個碩士學位。
+これは私にとって二つ目の修士号です。
+Kore wa watashi ni totte futatsume no shushigo desu.
+
+在研究所期間，我主要研究如何使用人工智慧分析醫療影像。
+大学院では、人工知能を使った医療画像の分析を研究しました。
+Daigakuin de wa, jinko chino o tsukatta iryo gazo no bunseki o kenkyu shimashita.
+
+同時，我也重視病患資料和個人隱私的保護。
+同時に、患者のデータと個人情報の保護も重視しました。
+Dōji ni, kanja no deta to kojin joho no hogo mo jushi shimashita.
+
+除了學術研究之外，我也在富士康參與工業人工智慧專案。
+学術研究だけでなく、フォックスコンで工業AIのプロジェクトにも参加しました。
+Gakujutsu kenkyu dake de naku, Fokkusukon de kogyo AI no purojekuto ni mo sanka shimashita.
+
+我的工作主要包括影像檢測、自動化流程，以及相關系統開發。
+主な仕事は、画像検査、自動化、そして関連システムの開発です。
+Omona shigoto wa, gazo kensa, jidoka, soshite kanren shisutemu no kaihatsu desu.
+
+我認為學術研究和工業應用之間有一些明顯的差異。
+学術研究と工業での応用には、いくつかの違いがあると考えています。
+Gakujutsu kenkyu to kogyo de no oyo ni wa, ikutsuka no chigai ga aru to kangaete imasu.
+
+學術研究比較重視新的方法、模型表現，以及資料隱私。
+学術研究では、新しい方法、モデルの性能、データのプライバシーを重視します。
+Gakujutsu kenkyu de wa, atarashii hoho, moderu no seino, deta no puraibashi o jushi shimasu.
+
+工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。
+工業の現場では、システムの安定性、処理速度、実際の効果を重視します。
+Kogyo no genba de wa, shisutemu no anteisei, shori sokudo, jissai no koka o jushi shimasu.
+
+我們也需要考慮有限的硬體資源和實際的生產環境。
+限られたハードウェアと、実際の生産環境も考える必要があります。
+Kagirareta hadowea to, jissai no seisan kankyo mo kangaeru hitsuyo ga arimasu.
+
+最重要的是，要讓人工智慧真正能夠在生產線上運作。
+最も大切なことは、AIを実際の生産ラインで使えるようにすることです。
+Mottomo taisetsu na koto wa, AI o jissai no seisan rain de tsukaeru yo ni suru koto desu.
+
+在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。
+技術面では、主にPython、C#、画像処理ツールを使っています。
+Gijutsumen de wa, omo ni Paison, Shi Shapu, gazo shori tsuru o tsukatte imasu.
+
+在工作中，我不只負責軟體和人工智慧模型的開發。
+仕事では、ソフトウェアとAIモデルの開発だけを担当しているわけではありません。
+Shigoto de wa, sofutowea to AI moderu no kaihatsu dake o tanto shite iru wake de wa arimasen.
+
+我也經常需要找出系統真正的問題。
+システムの本当の問題を見つけることも重要な仕事です。
+Shisutemu no honto no mondai o mitsukeru koto mo juyo na shigoto desu.
+
+例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。
+例えば、画像検査の結果に問題がある時は、一つずつ確認します。
+Tatoeba, gazo kensa no kekka ni mondai ga aru toki wa, hitotsu zutsu kakunin shimasu.
+
+我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。
+カメラ、照明、コンピューター、ネットワーク、ソフトウェアの設定、そして生産の流れを確認します。
+Kamera, shomei, konpyuta, nettowaku, sofutowea no settei, soshite seisan no nagare o kakunin shimasu.
+
+透過這樣的方式，我可以進行完整的問題排除。
+このようにして、システム全体の問題を解決します。
+Kono yo ni shite, shisutemu zentai no mondai o kaiketsu shimasu.
+
+我的另一個碩士學位來自台灣的龍華科技大學。
+もう一つの修士号は、台湾の龍華科技大学で取得しました。
+Mo hitotsu no shushigo wa, Taiwan no Ryuka Kagaku Daigaku de shutoku shimashita.
+
+我的專業是資訊管理，研究方向是資料科學和數據分析。
+専攻は情報管理で、研究分野はデータサイエンスとデータ分析でした。
+Senko wa joho kanri de, kenkyu bunya wa deta saiensu to deta bunseki deshita.
+
+在更早期的工作經驗中，我也從事過 Web 前端和後端開發。
+以前の仕事では、ウェブのフロントエンドとバックエンドの開発も経験しました。
+Izen no shigoto de wa, webu no furonto endo to bakku endo no kaihatsu mo keiken shimashita.
+
+我也有維護 Linux 伺服器和網路環境的經驗。
+Linuxサーバーとネットワーク環境を管理した経験もあります。
+Rinakkusu saba to nettowaku kankyo o kanri shita keiken mo arimasu.
+
+整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。
+全体として、私はAI研究、工業システムの開発、現場での問題解決の経験があります。
+Zentai to shite, watashi wa AI kenkyu, kogyo shisutemu no kaihatsu, genba de no mondai kaiketsu no keiken ga arimasu.
+
+我希望未來能把這些經驗運用在實際工作中。
+これから、これらの経験を実際の仕事に生かしたいと考えています。
+Kore kara, korera no keiken o jissai no shigoto ni ikashitai to kangaete imasu.
+
+我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。
+チームと協力して、システムの安定性、生産効率、AIの実用化に貢献したいです。
+Chimu to kyoryoku shite, shisutemu no anteisei, seisan koritsu, AI no jitsuyoka ni koken shitai desu.
+
+謝謝。
+どうぞよろしくお願いいたします。
+Dozo yoroshiku onegai itashimasu.
+
+
+======================================================================================
+
+大家好，我是干皓丞。
+Guten Tag zusammen. Mein Name ist Haocheng Kan.
+[ˈɡuːtn̩ taːk tsuˈzamən | maɪ̯n ˈnaːmə ɪst ˈhaʊ̯tʃɛŋ kan]
+
+很高興今天有機會參加面試。
+Vielen Dank für die Einladung. Ich freue mich, heute hier zu sein.
+[ˈfiːlən daŋk fyːɐ̯ diː ˈaɪ̯nlaːdʊŋ | ɪç ˈfʁɔɪ̯ə mɪç ˈhɔɪ̯tə hiːɐ̯ tsuː zaɪ̯n]
+
+我來自台灣桃園。
+Ich komme aus Taoyuan in Taiwan.
+[ɪç ˈkɔmə aʊ̯s taʊ̯ˈjʊ̯an ɪn ˈtaɪ̯van]
+
+我畢業於北京大學，取得計算機相關專業的碩士學位。
+Ich habe an der Peking-Universität einen Masterabschluss in Informatik gemacht.
+[ɪç ˈhaːbə an deːɐ̯ ˈpeːkɪŋ ʔunivɛʁziˌtɛːt ˈaɪ̯nən ˈmaːstɐʔapʃlʊs ɪn ɪnfɔʁmaˈtiːk ɡəˈmaxt]
+
+我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。
+Meine Forschungsthemen sind KI, medizinische Bildanalyse und föderiertes Lernen.
+[ˈmaɪ̯nə ˈfɔʁʃʊŋsˌteːmən zɪnt kaːˈʔiː | meːdiˈtsiːnɪʃə ˈbɪltʔanalyːzə ʊnt fødeˈʁiːɐ̯təs ˈlɛʁnən]
+
+這是我的第二個碩士學位。
+Das ist mein zweiter Masterabschluss.
+[das ɪst maɪ̯n ˈtsvaɪ̯tɐ ˈmaːstɐʔapʃlʊs]
+
+在研究所期間，我主要研究如何使用人工智慧分析醫療影像。
+Im Masterstudium habe ich medizinische Bilder mit KI analysiert.
+[ɪm ˈmaːstɐˌʃtuːdi̯ʊm ˈhaːbə ɪç meːdiˈtsiːnɪʃə ˈbɪldɐ mɪt kaːˈʔiː analyˈziːɐ̯t]
+
+同時，我也重視病患資料和個人隱私的保護。
+Dabei waren der Schutz von Patientendaten und die Privatsphäre sehr wichtig.
+[daˈbaɪ̯ ˈvaːʁən deːɐ̯ ʃʊts fɔn patsiˈʔɛntn̩ˌdaːtn̩ ʊnt diː pʁiˈvaːtˌsfɛːʁə zeːɐ̯ ˈvɪçtɪç]
+
+除了學術研究之外，我也在富士康參與工業人工智慧專案。
+Neben der Forschung habe ich bei Foxconn an industriellen KI-Projekten gearbeitet.
+[ˈneːbn̩ deːɐ̯ ˈfɔʁʃʊŋ ˈhaːbə ɪç baɪ̯ ˈfɔkskɔn an ɪndʊstʁiˈʔɛlən kaːˈʔiː pʁoˌjɛktn̩ ɡəˈʔaʁbaɪ̯tət]
+
+我的工作主要包括影像檢測、自動化流程，以及相關系統開發。
+Meine Aufgaben waren Bildprüfung, Automatisierung und Systementwicklung.
+[ˈmaɪ̯nə ˈaʊ̯fɡaːbn̩ ˈvaːʁən ˈbɪltˌpʁyːfʊŋ | aʊ̯tomatiˈziːʁʊŋ ʊnt zʏsˈteːmʔɛntˌvɪklʊŋ]
+
+我認為學術研究和工業應用之間有一些明顯的差異。
+Ich sehe klare Unterschiede zwischen Forschung und industrieller Anwendung.
+[ɪç ˈzeːə ˈklaːʁə ˈʊntɐˌʃiːdə ˈtsvɪʃn̩ ˈfɔʁʃʊŋ ʊnt ɪndʊstʁiˈʔɛlɐ ˈʔanˌvɛndʊŋ]
+
+學術研究比較重視新的方法、模型表現，以及資料隱私。
+In der Forschung sind neue Methoden, Modellleistung und Datenschutz besonders wichtig.
+[ɪn deːɐ̯ ˈfɔʁʃʊŋ zɪnt ˈnɔɪ̯ə meˈtoːdn̩ | moˈdɛlˌlaɪ̯stʊŋ ʊnt ˈdaːtn̩ˌʃʊts bəˈzɔndɐs ˈvɪçtɪç]
+
+工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。
+In der Industrie sind Systemstabilität, Geschwindigkeit und praktische Ergebnisse wichtiger.
+[ɪn deːɐ̯ ɪndʊsˈtʁiː zɪnt zʏsˈteːmʃtabiliˌtɛːt | ɡəˈʃvɪndɪçkaɪ̯t ʊnt ˈpʁaktɪʃə ɛɐ̯ˈɡeːpnɪsə ˈvɪçtɪɡɐ]
+
+我們也需要考慮有限的硬體資源和實際的生產環境。
+Wir müssen auch begrenzte Hardware und reale Produktionsbedingungen beachten.
+[viːɐ̯ ˈmʏsn̩ aʊ̯x bəˈɡʁɛntstə ˈhaːɐ̯tˌvɛːɐ̯ ʊnt ʁeˈʔaːlə pʁodʊkˈtsi̯oːnsbəˌdɪŋʊŋən bəˈʔaxtn̩]
+
+最重要的是，要讓人工智慧真正能夠在生產線上運作。
+Am wichtigsten ist, dass KI in der Produktion gut funktioniert.
+[am ˈvɪçtɪçstn̩ ɪst | das kaːˈʔiː ɪn deːɐ̯ pʁodʊkˈtsi̯oːn ɡuːt fʊŋktsi̯oˈniːɐ̯t]
+
+在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。
+Technisch arbeite ich vor allem mit Python, C-Sharp und Werkzeugen für Bildverarbeitung.
+[ˈtɛçnɪʃ ˈaʁbaɪ̯tə ɪç foːɐ̯ ˈʔaləm mɪt ˈpaɪ̯θɔn | ˈsiː ʃaːɐ̯p ʊnt ˈvɛɐ̯kˌtsɔɪ̯ɡn̩ fyːɐ̯ ˈbɪltfɛɐ̯ˌʔaʁbaɪ̯tʊŋ]
+
+在工作中，我不只負責軟體和人工智慧模型的開發。
+Bei der Arbeit entwickle ich nicht nur Software und KI-Modelle.
+[baɪ̯ deːɐ̯ ˈʔaʁbaɪ̯t ɛntˈvɪklə ɪç nɪçt nuːɐ̯ ˈsɔftˌvɛːɐ̯ ʊnt kaːˈʔiː moˈdɛlə]
+
+我也經常需要找出系統真正的問題。
+Ich muss auch oft die wirkliche Ursache eines Systemproblems finden.
+[ɪç mʊs aʊ̯x ɔft diː ˈvɪʁklɪçə ˈʔuːɐ̯zaːxə ˈaɪ̯nəs zʏsˈteːmpʁoˌbleːms ˈfɪndn̩]
+
+例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。
+Wenn zum Beispiel ein Prüfergebnis falsch ist, kontrolliere ich jeden Teil Schritt für Schritt.
+[vɛn tsʊm ˈbaɪ̯ʃpiːl aɪ̯n ˈpʁyːfʔɛɐ̯ˌɡeːpnɪs falʃ ɪst | kɔntʁoˈliːʁə ɪç ˈjeːdn̩ taɪ̯l ʃʁɪt fyːɐ̯ ʃʁɪt]
+
+我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。
+Ich prüfe die Kamera, das Licht, den Computer, das Netzwerk, die Software-Einstellungen und den ganzen Produktionsprozess.
+[ɪç ˈpʁyːfə diː ˈkaməʁa | das lɪçt | deːn kɔmˈpjuːtɐ | das ˈnɛt͡sˌvɛʁk | diː ˈsɔftˌvɛːɐ̯ ʔaɪ̯nˌʃtɛlʊŋən ʊnt deːn ˈɡantsn̩ pʁodʊkˈtsi̯oːnspʁoˌtsɛs]
+
+透過這樣的方式，我可以進行完整的問題排除。
+So kann ich das ganze System prüfen und Probleme lösen.
+[zoː kan ɪç das ˈɡantsə zʏsˈteːm ˈpʁyːfn̩ ʊnt pʁoˈbleːmə ˈløːzn̩]
+
+我的另一個碩士學位來自台灣的龍華科技大學。
+Meinen anderen Masterabschluss habe ich an der Lunghwa-Universität in Taiwan gemacht.
+[ˈmaɪ̯nən ˈandəʁən ˈmaːstɐʔapʃlʊs ˈhaːbə ɪç an deːɐ̯ ˈlʊŋxwaː ʔunivɛʁziˌtɛːt ɪn ˈtaɪ̯van ɡəˈmaxt]
+
+我的專業是資訊管理，研究方向是資料科學和數據分析。
+Mein Fach war Informationsmanagement. Meine Forschung lag im Bereich Datenwissenschaft und Datenanalyse.
+[maɪ̯n fax vaːɐ̯ ɪnfɔʁmaˈtsi̯oːnsˌmɛnɪdʒmənt | ˈmaɪ̯nə ˈfɔʁʃʊŋ laːk ɪm bəˈʁaɪ̯ç ˈdaːtn̩ˌvɪsn̩ʃaft ʊnt ˈdaːtn̩ʔanalyːzə]
+
+在更早期的工作經驗中，我也從事過 Web 前端和後端開發。
+Früher habe ich auch Front-End- und Back-End-Webentwicklung gemacht.
+[ˈfʁyːɐ̯ ˈhaːbə ɪç aʊ̯x ˈfʁɔntˌʔɛnt ʊnt ˈbɛkˌʔɛnt ˈvɛpʔɛntˌvɪklʊŋ ɡəˈmaxt]
+
+我也有維護 Linux 伺服器和網路環境的經驗。
+Ich habe außerdem Erfahrung mit Linux-Servern und Netzwerkumgebungen.
+[ɪç ˈhaːbə ˈaʊ̯sɐdeːm ɛɐ̯ˈfaːʁʊŋ mɪt ˈliːnʊksˌzœʁvɐn ʊnt ˈnɛt͡sˌvɛʁkʔʊmɡeːbʊŋən]
+
+整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。
+Insgesamt verbinde ich KI-Forschung, industrielle Systementwicklung und Problemlösung vor Ort.
+[ˈɪnsɡəˌzamt fɛɐ̯ˈbɪndə ɪç kaːˈʔiː ˈfɔʁʃʊŋ | ɪndʊstʁiˈʔɛlə zʏsˈteːmʔɛntˌvɪklʊŋ ʊnt pʁoˈbleːmˌløːzʊŋ foːɐ̯ ʔɔʁt]
+
+我希望未來能把這些經驗運用在實際工作中。
+In Zukunft möchte ich diese Erfahrungen in meiner Arbeit einsetzen.
+[ɪn ˈtsuːkʊnft ˈmœçtə ɪç ˈdiːzə ɛɐ̯ˈfaːʁʊŋən ɪn ˈmaɪ̯nɐ ˈʔaʁbaɪ̯t ˈaɪ̯nˌzɛt͡sn̩]
+
+我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。
+Ich möchte dem Team helfen, die Systemstabilität, die Produktionseffizienz und den praktischen Einsatz von KI zu verbessern.
+[ɪç ˈmœçtə deːm tiːm ˈhɛlfn̩ | diː zʏsˈteːmʃtabiliˌtɛːt | diː pʁodʊkˈtsi̯oːnsʔɛfitsi̯ˌɛnt͡s ʊnt deːn ˈpʁaktɪʃn̩ ˈaɪ̯nzat͡s fɔn kaːˈʔiː tsuː fɛɐ̯ˈbɛsɐn]
+
+謝謝。
+Vielen Dank.
+[ˈfiːlən daŋk]
+
+
+======================================================================================
+
+大家好，我是干皓丞。
+Bonjour à toutes et à tous. Je m’appelle Haocheng Kan.
+[bɔ̃.ʒuʁ a tut e a tus | ʒə ma.pɛl a.o.tʃɛŋ kan]
+
+很高興今天有機會參加面試。
+Je suis très heureux d’avoir l’occasion de passer cet entretien aujourd’hui.
+[ʒə sɥi tʁɛ.z‿ø.ʁø da.vwaʁ lɔ.ka.zjɔ̃ də pa.se sɛ.t‿ɑ̃.tʁə.tjɛ̃ o.ʒuʁ.dɥi]
+
+我來自台灣桃園。
+Je viens de Taoyuan, à Taïwan.
+[ʒə vjɛ̃ də ta.o.jɥan a taj.wan]
+
+我畢業於北京大學，取得計算機相關專業的碩士學位。
+J’ai obtenu un master en informatique à l’Université de Pékin.
+[ʒe ɔp.tə.ny œ̃ mas.tɛʁ ɑ̃ ɛ̃.fɔʁ.ma.tik a ly.ni.vɛʁ.si.te də pe.kɛ̃]
+
+我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。
+Mes principaux domaines de recherche sont l’intelligence artificielle, l’analyse d’images médicales et l’apprentissage fédéré.
+[me pʁɛ̃.si.po dɔ.mɛn də ʁə.ʃɛʁʃ sɔ̃ lɛ̃.tɛ.li.ʒɑ̃s aʁ.ti.fi.sjɛl | la.na.liz di.maʒ me.di.kal e la.pʁɑ̃.ti.saʒ fe.de.ʁe]
+
+這是我的第二個碩士學位。
+C’est mon deuxième master.
+[sɛ mɔ̃ dø.zjɛm mas.tɛʁ]
+
+在研究所期間，我主要研究如何使用人工智慧分析醫療影像。
+Pendant mon master, j’ai surtout étudié comment utiliser l’IA pour analyser des images médicales.
+[pɑ̃.dɑ̃ mɔ̃ mas.tɛʁ | ʒe syʁ.tu e.ty.dje kɔ.mɑ̃ y.ti.li.ze li.a puʁ a.na.li.ze de.z‿i.maʒ me.di.kal]
+
+同時，我也重視病患資料和個人隱私的保護。
+J’ai également accordé beaucoup d’importance à la protection des données des patients et de la vie privée.
+[ʒe e.ɡal.mɑ̃ a.kɔʁ.de bo.ku dɛ̃.pɔʁ.tɑ̃s a la pʁɔ.tɛk.sjɔ̃ de dɔ.ne de pa.sjɑ̃ e də la vi pʁi.ve]
+
+除了學術研究之外，我也在富士康參與工業人工智慧專案。
+En plus de la recherche universitaire, j’ai participé à des projets d’IA industrielle chez Foxconn.
+[ɑ̃ ply də la ʁə.ʃɛʁʃ y.ni.vɛʁ.si.tɛʁ | ʒe paʁ.ti.si.pe a de pʁɔ.ʒɛ di.a ɛ̃.dys.tʁi.ɛl ʃe fɔks.kɔn]
+
+我的工作主要包括影像檢測、自動化流程，以及相關系統開發。
+Mon travail comprenait principalement le contrôle d’images, l’automatisation et le développement de systèmes.
+[mɔ̃ tʁa.vaj kɔ̃.pʁə.nɛ pʁɛ̃.si.pal.mɑ̃ lə kɔ̃.tʁol di.maʒ | lo.tɔ.ma.ti.za.sjɔ̃ e lə de.vlɔp.mɑ̃ də sis.tɛm]
+
+我認為學術研究和工業應用之間有一些明顯的差異。
+Je pense qu’il existe des différences claires entre la recherche universitaire et les applications industrielles.
+[ʒə pɑ̃s kil ɛɡ.zist de di.fe.ʁɑ̃s klɛʁ ɑ̃tʁ la ʁə.ʃɛʁʃ y.ni.vɛʁ.si.tɛʁ e le.z‿a.pli.ka.sjɔ̃ ɛ̃.dys.tʁi.ɛl]
+
+學術研究比較重視新的方法、模型表現，以及資料隱私。
+Dans la recherche, les nouvelles méthodes, la performance des modèles et la protection des données sont très importantes.
+[dɑ̃ la ʁə.ʃɛʁʃ | le nu.vɛl me.tɔd | la pɛʁ.fɔʁ.mɑ̃s de mɔ.dɛl e la pʁɔ.tɛk.sjɔ̃ de dɔ.ne sɔ̃ tʁɛ.z‿ɛ̃.pɔʁ.tɑ̃t]
+
+工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。
+Dans l’industrie, la stabilité du système, la vitesse d’exécution et les résultats pratiques sont plus importants.
+[dɑ̃ lɛ̃.dys.tʁi | la sta.bi.li.te dy sis.tɛm | la vi.tɛs dɛɡ.ze.ky.sjɔ̃ e le ʁe.zyl.ta pʁa.tik sɔ̃ ply.z‿ɛ̃.pɔʁ.tɑ̃]
+
+我們也需要考慮有限的硬體資源和實際的生產環境。
+Nous devons aussi tenir compte des ressources matérielles limitées et des conditions réelles de production.
+[nu də.vɔ̃ o.si tə.niʁ kɔ̃t de ʁə.suʁs ma.te.ʁjɛl li.mi.te e de kɔ̃.di.sjɔ̃ ʁe.ɛl də pʁɔ.dyk.sjɔ̃]
+
+最重要的是，要讓人工智慧真正能夠在生產線上運作。
+Le plus important est de faire fonctionner l’IA sur une ligne de production.
+[lə ply.z‿ɛ̃.pɔʁ.tɑ̃ ɛ də fɛʁ fɔ̃k.sjɔ.ne li.a syʁ yn liɲ də pʁɔ.dyk.sjɔ̃]
+
+在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。
+Sur le plan technique, j’utilise surtout Python, C Sharp et des outils de traitement d’image.
+[syʁ lə plɑ̃ tɛk.nik | ʒy.ti.liz syʁ.tu paɪ.tɔn | si ʃaʁp e de zu.ti də tʁɛt.mɑ̃ di.maʒ]
+
+在工作中，我不只負責軟體和人工智慧模型的開發。
+Au travail, je ne m’occupe pas seulement du développement de logiciels et de modèles d’IA.
+[o tʁa.vaj | ʒə nə mɔ.kyp pa sœl.mɑ̃ dy de.vlɔp.mɑ̃ də lɔ.ʒi.sjɛl e də mɔ.dɛl di.a]
+
+我也經常需要找出系統真正的問題。
+Je dois aussi souvent trouver la vraie cause des problèmes du système.
+[ʒə dwa o.si su.vɑ̃ tʁu.ve la vʁɛ koz de pʁɔ.blɛm dy sis.tɛm]
+
+例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。
+Par exemple, quand le résultat du contrôle d’image est anormal, je vérifie chaque partie étape par étape.
+[paʁ ɛɡ.zɑ̃pl | kɑ̃ lə ʁe.zyl.ta dy kɔ̃.tʁol di.maʒ ɛ.t‿a.nɔʁ.mal | ʒə ve.ʁi.fi ʃak paʁ.ti e.tap paʁ e.tap]
+
+我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。
+Je vérifie la caméra, l’éclairage, l’ordinateur, le réseau, les paramètres du logiciel et tout le processus de production.
+[ʒə ve.ʁi.fi la ka.me.ʁa | le.klɛ.ʁaʒ | lɔʁ.di.na.tœʁ | lə ʁe.zo | le pa.ʁa.mɛtʁ dy lɔ.ʒi.sjɛl e tu lə pʁɔ.se.sys də pʁɔ.dyk.sjɔ̃]
+
+透過這樣的方式，我可以進行完整的問題排除。
+De cette façon, je peux vérifier tout le système et résoudre les problèmes.
+[də sɛt fa.sɔ̃ | ʒə pø ve.ʁi.fi.je tu lə sis.tɛm e ʁe.zudʁ le pʁɔ.blɛm]
+
+我的另一個碩士學位來自台灣的龍華科技大學。
+J’ai obtenu mon autre master à l’Université des sciences et technologies de Lunghwa, à Taïwan.
+[ʒe ɔp.tə.ny mɔ̃ no.tʁə mas.tɛʁ a ly.ni.vɛʁ.si.te de sjɑ̃s e tɛk.nɔ.lɔ.ʒi də lʊŋ.xwa a taj.wan]
+
+我的專業是資訊管理，研究方向是資料科學和數據分析。
+Ma spécialité était la gestion de l’information. Mes recherches portaient sur la science des données et l’analyse des données.
+[ma spe.sja.li.te e.tɛ la ʒɛs.tjɔ̃ də lɛ̃.fɔʁ.ma.sjɔ̃ | me ʁə.ʃɛʁʃ pɔʁ.tɛ syʁ la sjɑ̃s de dɔ.ne e la.na.liz de dɔ.ne]
+
+在更早期的工作經驗中，我也從事過 Web 前端和後端開發。
+Avant cela, j’ai aussi travaillé dans le développement web front-end et back-end.
+[a.vɑ̃ sə.la | ʒe o.si tʁa.va.je dɑ̃ lə de.vlɔp.mɑ̃ wɛb fʁɔnt ɛnd e bak ɛnd]
+
+我也有維護 Linux 伺服器和網路環境的經驗。
+J’ai également de l’expérience dans la maintenance de serveurs Linux et d’environnements réseau.
+[ʒe e.ɡal.mɑ̃ də lɛk.spe.ʁjɑ̃s dɑ̃ la mɛ̃.tə.nɑ̃s də sɛʁ.vœʁ li.nyks e dɑ̃.vi.ʁɔn.mɑ̃ ʁe.zo]
+
+整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。
+Dans l’ensemble, mon parcours combine la recherche en IA, le développement de systèmes industriels et la résolution de problèmes sur site.
+[dɑ̃ lɑ̃.sɑ̃bl | mɔ̃ paʁ.kuʁ kɔ̃.bin la ʁə.ʃɛʁʃ ɑ̃ i.a | lə de.vlɔp.mɑ̃ də sis.tɛm ɛ̃.dys.tʁi.ɛl e la ʁe.zɔ.ly.sjɔ̃ də pʁɔ.blɛm syʁ sit]
+
+我希望未來能把這些經驗運用在實際工作中。
+À l’avenir, je souhaite utiliser ces expériences dans mon travail.
+[a la.və.niʁ | ʒə swɛt y.ti.li.ze se.z‿ɛk.spe.ʁjɑ̃s dɑ̃ mɔ̃ tʁa.vaj]
+
+我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。
+Je souhaite aussi aider l’équipe à améliorer la stabilité des systèmes, l’efficacité de la production et l’utilisation pratique de l’IA.
+[ʒə swɛt o.si e.de le.kip a a.me.ljɔ.ʁe la sta.bi.li.te de sis.tɛm | le.fi.ka.si.te də la pʁɔ.dyk.sjɔ̃ e ly.ti.li.za.sjɔ̃ pʁa.tik də li.a]
+
+謝謝。
+Je vous remercie.
+[ʒə vu ʁə.mɛʁ.si]
+
+

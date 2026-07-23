@@ -1,0 +1,2426 @@
+{
+  "version": "1.0",
+  "meta": {
+    "title": {
+      "zh": "多語面試自我介紹",
+      "en": "Multilingual Interview Self-Introduction"
+    },
+    "speaker": "Haocheng Kan / 干皓丞",
+    "languages": [
+      "zh-TW",
+      "en-US",
+      "ja-JP",
+      "de-DE",
+      "fr-FR"
+    ],
+    "tts": "Web Speech API",
+    "source": "script.txt"
+  },
+  "schema": {
+    "line": {
+      "id": "string",
+      "segments": [
+        {
+          "text": "string",
+          "lang": "BCP-47",
+          "role": "primary|translation"
+        }
+      ],
+      "hints": [
+        {
+          "type": "romaji|ipa",
+          "text": "string"
+        }
+      ]
+    }
+  },
+  "tracks": [
+    {
+      "id": "zh",
+      "name": {
+        "zh": "中文全文",
+        "en": "Full Chinese"
+      },
+      "description": {
+        "zh": "面試自我介紹完整中文講稿。",
+        "en": "Full Chinese interview self-introduction."
+      },
+      "lines": [
+        {
+          "id": "zh_001",
+          "segments": [
+            {
+              "text": "大家好，我是干皓丞，很高興今天有機會參加面試。我來自台灣桃園，畢業於北京大學計算機相關專業碩士，研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。",
+              "lang": "zh-TW",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "zh_002",
+          "segments": [
+            {
+              "text": "這是我的第二個碩士學位。在研究所期間，我主要探討如何在保護病患資料與使用者隱私的前提下，利用人工智慧進行醫療影像分析。同時，我也在富士康參與工業人工智慧專案，負責影像檢測、自動化流程，以及相關系統開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "zh_003",
+          "segments": [
+            {
+              "text": "我認為學術研究和工業應用最大的差異在於，研究比較重視方法創新、模型表現與資料隱私；工業現場則更重視系統穩定性、執行效率，以及如何在有限的硬體與生產條件下，真正把人工智慧導入產線。",
+              "lang": "zh-TW",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "zh_004",
+          "segments": [
+            {
+              "text": "在技術方面，我主要使用 Python、C# 和相關影像處理工具。工作中，我不只負責軟體和人工智慧模型的開發，也經常需要找出系統真正的問題。例如，當影像檢測結果異常時，我會從相機、光源、電腦、網路、軟體設定，到整體生產流程逐一檢查，進行系統性的故障排除。",
+              "lang": "zh-TW",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "zh_005",
+          "segments": [
+            {
+              "text": "我另外一個碩士學位是台灣龍華科技大學的資訊管理碩士，研究方向是資料科學與數據分析。在更早期的工作經驗中，我也曾從事 Web 前後端開發，以及 Linux 伺服器和網路環境的維護。",
+              "lang": "zh-TW",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "zh_006",
+          "segments": [
+            {
+              "text": "整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。我希望未來能把這些經驗運用在實際工作中，協助團隊提升系統穩定性、生產效率與技術落地能力。謝謝。",
+              "lang": "zh-TW",
+              "role": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zh-en",
+      "name": {
+        "zh": "中英對照",
+        "en": "Chinese–English"
+      },
+      "description": {
+        "zh": "逐句中英對照，適合練習雙語朗讀。",
+        "en": "Line-by-line Chinese–English pairs for bilingual practice."
+      },
+      "lines": [
+        {
+          "id": "zh_en_001",
+          "segments": [
+            {
+              "text": "大家好，我是干皓丞。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Hello, everyone. My name is Haocheng Kan.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_002",
+          "segments": [
+            {
+              "text": "很高興今天有機會參加面試。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I am very happy to have this interview opportunity today.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_003",
+          "segments": [
+            {
+              "text": "我來自台灣桃園。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I am from Taoyuan, Taiwan.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_004",
+          "segments": [
+            {
+              "text": "我畢業於北京大學，取得計算機相關專業的碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I earned a master’s degree in Computer Science from Peking University.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_005",
+          "segments": [
+            {
+              "text": "我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "My main research areas are artificial intelligence, medical image analysis, and federated learning.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_006",
+          "segments": [
+            {
+              "text": "這是我的第二個碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "This is my second master’s degree.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_007",
+          "segments": [
+            {
+              "text": "在研究所期間，我主要研究如何使用人工智慧分析醫療影像。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "During my graduate studies, I mainly studied how to use AI to analyze medical images.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_008",
+          "segments": [
+            {
+              "text": "同時，我也重視病患資料和個人隱私的保護。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "At the same time, I focused on protecting patient data and personal privacy.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_009",
+          "segments": [
+            {
+              "text": "除了學術研究之外，我也在富士康參與工業人工智慧專案。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Besides academic research, I also worked on industrial AI projects at Foxconn.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_010",
+          "segments": [
+            {
+              "text": "我的工作主要包括影像檢測、自動化流程，以及相關系統開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "My work mainly included image inspection, process automation, and system development.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_011",
+          "segments": [
+            {
+              "text": "我認為學術研究和工業應用之間有一些明顯的差異。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I believe there are some clear differences between academic research and industrial applications.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_012",
+          "segments": [
+            {
+              "text": "學術研究比較重視新的方法、模型表現，以及資料隱私。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Academic research focuses more on new methods, model performance, and data privacy.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_013",
+          "segments": [
+            {
+              "text": "工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Industrial work focuses more on system stability, running speed, and practical results.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_014",
+          "segments": [
+            {
+              "text": "我們也需要考慮有限的硬體資源和實際的生產環境。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "We also need to consider limited hardware resources and real production conditions.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_015",
+          "segments": [
+            {
+              "text": "最重要的是，要讓人工智慧真正能夠在生產線上運作。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Most importantly, we need to make AI work well on the production line.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_016",
+          "segments": [
+            {
+              "text": "在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "For my technical skills, I mainly use Python, C#, and image processing tools.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_017",
+          "segments": [
+            {
+              "text": "在工作中，我不只負責軟體和人工智慧模型的開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "At work, I am not only responsible for software and AI model development.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_018",
+          "segments": [
+            {
+              "text": "我也經常需要找出系統真正的問題。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I also need to find the real cause of system problems.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_019",
+          "segments": [
+            {
+              "text": "例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "For example, when the image inspection result is not correct, I check each part step by step.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_020",
+          "segments": [
+            {
+              "text": "我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I check the camera, lighting, computer, network, software settings, and the whole production process.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_021",
+          "segments": [
+            {
+              "text": "透過這樣的方式，我可以進行完整的問題排除。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "In this way, I can troubleshoot the whole system.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_022",
+          "segments": [
+            {
+              "text": "我的另一個碩士學位來自台灣的龍華科技大學。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "My other master’s degree is from Lunghwa University of Science and Technology in Taiwan.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_023",
+          "segments": [
+            {
+              "text": "我的專業是資訊管理，研究方向是資料科學和數據分析。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "My major was Information Management, and my research focused on data science and data analysis.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_024",
+          "segments": [
+            {
+              "text": "在更早期的工作經驗中，我也從事過 Web 前端和後端開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "In my earlier work experience, I also worked on front-end and back-end web development.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_025",
+          "segments": [
+            {
+              "text": "我也有維護 Linux 伺服器和網路環境的經驗。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I also have experience maintaining Linux servers and network environments.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_026",
+          "segments": [
+            {
+              "text": "整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Overall, my background combines AI research, industrial system development, and on-site troubleshooting.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_027",
+          "segments": [
+            {
+              "text": "我希望未來能把這些經驗運用在實際工作中。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I hope to use these experiences in my future work.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_028",
+          "segments": [
+            {
+              "text": "我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "I also hope to help the team improve system stability, production efficiency, and the practical use of AI.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        },
+        {
+          "id": "zh_en_029",
+          "segments": [
+            {
+              "text": "謝謝。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Thank you.",
+              "lang": "en-US",
+              "role": "translation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zh-ja",
+      "name": {
+        "zh": "中日對照",
+        "en": "Chinese–Japanese"
+      },
+      "description": {
+        "zh": "逐句中日對照，並附羅馬拼音提示。",
+        "en": "Line-by-line Chinese–Japanese pairs with romaji hints."
+      },
+      "lines": [
+        {
+          "id": "zh_ja_001",
+          "segments": [
+            {
+              "text": "大家好，我是干皓丞。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "皆さん、こんにちは。カン・ハオチェンと申します。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Minasan, konnichiwa. Kan Haochen to moshimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_002",
+          "segments": [
+            {
+              "text": "很高興今天有機會參加面試。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "本日は面接の機会をいただき、ありがとうございます。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Honjitsu wa mensetsu no kikai o itadaki, arigato gozaimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_003",
+          "segments": [
+            {
+              "text": "我來自台灣桃園。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "台湾の桃園出身です。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Taiwan no Taoyuan shusshin desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_004",
+          "segments": [
+            {
+              "text": "我畢業於北京大學，取得計算機相關專業的碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "北京大学でコンピューター分野の修士号を取得しました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Pekin Daigaku de konpyuta bunya no shushigo o shutoku shimashita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_005",
+          "segments": [
+            {
+              "text": "我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "主な研究分野は、人工知能、医療画像分析、連合学習です。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Omona kenkyu bunya wa, jinko chino, iryo gazo bunseki, rengo gakushu desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_006",
+          "segments": [
+            {
+              "text": "這是我的第二個碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "これは私にとって二つ目の修士号です。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Kore wa watashi ni totte futatsume no shushigo desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_007",
+          "segments": [
+            {
+              "text": "在研究所期間，我主要研究如何使用人工智慧分析醫療影像。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "大学院では、人工知能を使った医療画像の分析を研究しました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Daigakuin de wa, jinko chino o tsukatta iryo gazo no bunseki o kenkyu shimashita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_008",
+          "segments": [
+            {
+              "text": "同時，我也重視病患資料和個人隱私的保護。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "同時に、患者のデータと個人情報の保護も重視しました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Dōji ni, kanja no deta to kojin joho no hogo mo jushi shimashita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_009",
+          "segments": [
+            {
+              "text": "除了學術研究之外，我也在富士康參與工業人工智慧專案。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "学術研究だけでなく、フォックスコンで工業AIのプロジェクトにも参加しました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Gakujutsu kenkyu dake de naku, Fokkusukon de kogyo AI no purojekuto ni mo sanka shimashita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_010",
+          "segments": [
+            {
+              "text": "我的工作主要包括影像檢測、自動化流程，以及相關系統開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "主な仕事は、画像検査、自動化、そして関連システムの開発です。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Omona shigoto wa, gazo kensa, jidoka, soshite kanren shisutemu no kaihatsu desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_011",
+          "segments": [
+            {
+              "text": "我認為學術研究和工業應用之間有一些明顯的差異。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "学術研究と工業での応用には、いくつかの違いがあると考えています。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Gakujutsu kenkyu to kogyo de no oyo ni wa, ikutsuka no chigai ga aru to kangaete imasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_012",
+          "segments": [
+            {
+              "text": "學術研究比較重視新的方法、模型表現，以及資料隱私。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "学術研究では、新しい方法、モデルの性能、データのプライバシーを重視します。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Gakujutsu kenkyu de wa, atarashii hoho, moderu no seino, deta no puraibashi o jushi shimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_013",
+          "segments": [
+            {
+              "text": "工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "工業の現場では、システムの安定性、処理速度、実際の効果を重視します。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Kogyo no genba de wa, shisutemu no anteisei, shori sokudo, jissai no koka o jushi shimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_014",
+          "segments": [
+            {
+              "text": "我們也需要考慮有限的硬體資源和實際的生產環境。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "限られたハードウェアと、実際の生産環境も考える必要があります。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Kagirareta hadowea to, jissai no seisan kankyo mo kangaeru hitsuyo ga arimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_015",
+          "segments": [
+            {
+              "text": "最重要的是，要讓人工智慧真正能夠在生產線上運作。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "最も大切なことは、AIを実際の生産ラインで使えるようにすることです。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Mottomo taisetsu na koto wa, AI o jissai no seisan rain de tsukaeru yo ni suru koto desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_016",
+          "segments": [
+            {
+              "text": "在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "技術面では、主にPython、C#、画像処理ツールを使っています。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Gijutsumen de wa, omo ni Paison, Shi Shapu, gazo shori tsuru o tsukatte imasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_017",
+          "segments": [
+            {
+              "text": "在工作中，我不只負責軟體和人工智慧模型的開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "仕事では、ソフトウェアとAIモデルの開発だけを担当しているわけではありません。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Shigoto de wa, sofutowea to AI moderu no kaihatsu dake o tanto shite iru wake de wa arimasen."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_018",
+          "segments": [
+            {
+              "text": "我也經常需要找出系統真正的問題。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "システムの本当の問題を見つけることも重要な仕事です。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Shisutemu no honto no mondai o mitsukeru koto mo juyo na shigoto desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_019",
+          "segments": [
+            {
+              "text": "例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "例えば、画像検査の結果に問題がある時は、一つずつ確認します。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Tatoeba, gazo kensa no kekka ni mondai ga aru toki wa, hitotsu zutsu kakunin shimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_020",
+          "segments": [
+            {
+              "text": "我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "カメラ、照明、コンピューター、ネットワーク、ソフトウェアの設定、そして生産の流れを確認します。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Kamera, shomei, konpyuta, nettowaku, sofutowea no settei, soshite seisan no nagare o kakunin shimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_021",
+          "segments": [
+            {
+              "text": "透過這樣的方式，我可以進行完整的問題排除。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "このようにして、システム全体の問題を解決します。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Kono yo ni shite, shisutemu zentai no mondai o kaiketsu shimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_022",
+          "segments": [
+            {
+              "text": "我的另一個碩士學位來自台灣的龍華科技大學。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "もう一つの修士号は、台湾の龍華科技大学で取得しました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Mo hitotsu no shushigo wa, Taiwan no Ryuka Kagaku Daigaku de shutoku shimashita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_023",
+          "segments": [
+            {
+              "text": "我的專業是資訊管理，研究方向是資料科學和數據分析。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "専攻は情報管理で、研究分野はデータサイエンスとデータ分析でした。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Senko wa joho kanri de, kenkyu bunya wa deta saiensu to deta bunseki deshita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_024",
+          "segments": [
+            {
+              "text": "在更早期的工作經驗中，我也從事過 Web 前端和後端開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "以前の仕事では、ウェブのフロントエンドとバックエンドの開発も経験しました。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Izen no shigoto de wa, webu no furonto endo to bakku endo no kaihatsu mo keiken shimashita."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_025",
+          "segments": [
+            {
+              "text": "我也有維護 Linux 伺服器和網路環境的經驗。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Linuxサーバーとネットワーク環境を管理した経験もあります。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Rinakkusu saba to nettowaku kankyo o kanri shita keiken mo arimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_026",
+          "segments": [
+            {
+              "text": "整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "全体として、私はAI研究、工業システムの開発、現場での問題解決の経験があります。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Zentai to shite, watashi wa AI kenkyu, kogyo shisutemu no kaihatsu, genba de no mondai kaiketsu no keiken ga arimasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_027",
+          "segments": [
+            {
+              "text": "我希望未來能把這些經驗運用在實際工作中。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "これから、これらの経験を実際の仕事に生かしたいと考えています。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Kore kara, korera no keiken o jissai no shigoto ni ikashitai to kangaete imasu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_028",
+          "segments": [
+            {
+              "text": "我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "チームと協力して、システムの安定性、生産効率、AIの実用化に貢献したいです。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Chimu to kyoryoku shite, shisutemu no anteisei, seisan koritsu, AI no jitsuyoka ni koken shitai desu."
+            }
+          ]
+        },
+        {
+          "id": "zh_ja_029",
+          "segments": [
+            {
+              "text": "謝謝。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "どうぞよろしくお願いいたします。",
+              "lang": "ja-JP",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "romaji",
+              "text": "Dozo yoroshiku onegai itashimasu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zh-de",
+      "name": {
+        "zh": "中德對照",
+        "en": "Chinese–German"
+      },
+      "description": {
+        "zh": "逐句中德對照，並附國際音標（IPA）。",
+        "en": "Line-by-line Chinese–German pairs with IPA hints."
+      },
+      "lines": [
+        {
+          "id": "zh_de_001",
+          "segments": [
+            {
+              "text": "大家好，我是干皓丞。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Guten Tag zusammen. Mein Name ist Haocheng Kan.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈɡuːtn̩ taːk tsuˈzamən | maɪ̯n ˈnaːmə ɪst ˈhaʊ̯tʃɛŋ kan"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_002",
+          "segments": [
+            {
+              "text": "很高興今天有機會參加面試。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Vielen Dank für die Einladung. Ich freue mich, heute hier zu sein.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈfiːlən daŋk fyːɐ̯ diː ˈaɪ̯nlaːdʊŋ | ɪç ˈfʁɔɪ̯ə mɪç ˈhɔɪ̯tə hiːɐ̯ tsuː zaɪ̯n"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_003",
+          "segments": [
+            {
+              "text": "我來自台灣桃園。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich komme aus Taoyuan in Taiwan.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç ˈkɔmə aʊ̯s taʊ̯ˈjʊ̯an ɪn ˈtaɪ̯van"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_004",
+          "segments": [
+            {
+              "text": "我畢業於北京大學，取得計算機相關專業的碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich habe an der Peking-Universität einen Masterabschluss in Informatik gemacht.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç ˈhaːbə an deːɐ̯ ˈpeːkɪŋ ʔunivɛʁziˌtɛːt ˈaɪ̯nən ˈmaːstɐʔapʃlʊs ɪn ɪnfɔʁmaˈtiːk ɡəˈmaxt"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_005",
+          "segments": [
+            {
+              "text": "我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Meine Forschungsthemen sind KI, medizinische Bildanalyse und föderiertes Lernen.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈmaɪ̯nə ˈfɔʁʃʊŋsˌteːmən zɪnt kaːˈʔiː | meːdiˈtsiːnɪʃə ˈbɪltʔanalyːzə ʊnt fødeˈʁiːɐ̯təs ˈlɛʁnən"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_006",
+          "segments": [
+            {
+              "text": "這是我的第二個碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Das ist mein zweiter Masterabschluss.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "das ɪst maɪ̯n ˈtsvaɪ̯tɐ ˈmaːstɐʔapʃlʊs"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_007",
+          "segments": [
+            {
+              "text": "在研究所期間，我主要研究如何使用人工智慧分析醫療影像。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Im Masterstudium habe ich medizinische Bilder mit KI analysiert.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪm ˈmaːstɐˌʃtuːdi̯ʊm ˈhaːbə ɪç meːdiˈtsiːnɪʃə ˈbɪldɐ mɪt kaːˈʔiː analyˈziːɐ̯t"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_008",
+          "segments": [
+            {
+              "text": "同時，我也重視病患資料和個人隱私的保護。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Dabei waren der Schutz von Patientendaten und die Privatsphäre sehr wichtig.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "daˈbaɪ̯ ˈvaːʁən deːɐ̯ ʃʊts fɔn patsiˈʔɛntn̩ˌdaːtn̩ ʊnt diː pʁiˈvaːtˌsfɛːʁə zeːɐ̯ ˈvɪçtɪç"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_009",
+          "segments": [
+            {
+              "text": "除了學術研究之外，我也在富士康參與工業人工智慧專案。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Neben der Forschung habe ich bei Foxconn an industriellen KI-Projekten gearbeitet.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈneːbn̩ deːɐ̯ ˈfɔʁʃʊŋ ˈhaːbə ɪç baɪ̯ ˈfɔkskɔn an ɪndʊstʁiˈʔɛlən kaːˈʔiː pʁoˌjɛktn̩ ɡəˈʔaʁbaɪ̯tət"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_010",
+          "segments": [
+            {
+              "text": "我的工作主要包括影像檢測、自動化流程，以及相關系統開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Meine Aufgaben waren Bildprüfung, Automatisierung und Systementwicklung.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈmaɪ̯nə ˈaʊ̯fɡaːbn̩ ˈvaːʁən ˈbɪltˌpʁyːfʊŋ | aʊ̯tomatiˈziːʁʊŋ ʊnt zʏsˈteːmʔɛntˌvɪklʊŋ"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_011",
+          "segments": [
+            {
+              "text": "我認為學術研究和工業應用之間有一些明顯的差異。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich sehe klare Unterschiede zwischen Forschung und industrieller Anwendung.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç ˈzeːə ˈklaːʁə ˈʊntɐˌʃiːdə ˈtsvɪʃn̩ ˈfɔʁʃʊŋ ʊnt ɪndʊstʁiˈʔɛlɐ ˈʔanˌvɛndʊŋ"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_012",
+          "segments": [
+            {
+              "text": "學術研究比較重視新的方法、模型表現，以及資料隱私。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "In der Forschung sind neue Methoden, Modellleistung und Datenschutz besonders wichtig.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪn deːɐ̯ ˈfɔʁʃʊŋ zɪnt ˈnɔɪ̯ə meˈtoːdn̩ | moˈdɛlˌlaɪ̯stʊŋ ʊnt ˈdaːtn̩ˌʃʊts bəˈzɔndɐs ˈvɪçtɪç"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_013",
+          "segments": [
+            {
+              "text": "工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "In der Industrie sind Systemstabilität, Geschwindigkeit und praktische Ergebnisse wichtiger.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪn deːɐ̯ ɪndʊsˈtʁiː zɪnt zʏsˈteːmʃtabiliˌtɛːt | ɡəˈʃvɪndɪçkaɪ̯t ʊnt ˈpʁaktɪʃə ɛɐ̯ˈɡeːpnɪsə ˈvɪçtɪɡɐ"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_014",
+          "segments": [
+            {
+              "text": "我們也需要考慮有限的硬體資源和實際的生產環境。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Wir müssen auch begrenzte Hardware und reale Produktionsbedingungen beachten.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "viːɐ̯ ˈmʏsn̩ aʊ̯x bəˈɡʁɛntstə ˈhaːɐ̯tˌvɛːɐ̯ ʊnt ʁeˈʔaːlə pʁodʊkˈtsi̯oːnsbəˌdɪŋʊŋən bəˈʔaxtn̩"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_015",
+          "segments": [
+            {
+              "text": "最重要的是，要讓人工智慧真正能夠在生產線上運作。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Am wichtigsten ist, dass KI in der Produktion gut funktioniert.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "am ˈvɪçtɪçstn̩ ɪst | das kaːˈʔiː ɪn deːɐ̯ pʁodʊkˈtsi̯oːn ɡuːt fʊŋktsi̯oˈniːɐ̯t"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_016",
+          "segments": [
+            {
+              "text": "在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Technisch arbeite ich vor allem mit Python, C-Sharp und Werkzeugen für Bildverarbeitung.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈtɛçnɪʃ ˈaʁbaɪ̯tə ɪç foːɐ̯ ˈʔaləm mɪt ˈpaɪ̯θɔn | ˈsiː ʃaːɐ̯p ʊnt ˈvɛɐ̯kˌtsɔɪ̯ɡn̩ fyːɐ̯ ˈbɪltfɛɐ̯ˌʔaʁbaɪ̯tʊŋ"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_017",
+          "segments": [
+            {
+              "text": "在工作中，我不只負責軟體和人工智慧模型的開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Bei der Arbeit entwickle ich nicht nur Software und KI-Modelle.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "baɪ̯ deːɐ̯ ˈʔaʁbaɪ̯t ɛntˈvɪklə ɪç nɪçt nuːɐ̯ ˈsɔftˌvɛːɐ̯ ʊnt kaːˈʔiː moˈdɛlə"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_018",
+          "segments": [
+            {
+              "text": "我也經常需要找出系統真正的問題。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich muss auch oft die wirkliche Ursache eines Systemproblems finden.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç mʊs aʊ̯x ɔft diː ˈvɪʁklɪçə ˈʔuːɐ̯zaːxə ˈaɪ̯nəs zʏsˈteːmpʁoˌbleːms ˈfɪndn̩"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_019",
+          "segments": [
+            {
+              "text": "例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Wenn zum Beispiel ein Prüfergebnis falsch ist, kontrolliere ich jeden Teil Schritt für Schritt.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "vɛn tsʊm ˈbaɪ̯ʃpiːl aɪ̯n ˈpʁyːfʔɛɐ̯ˌɡeːpnɪs falʃ ɪst | kɔntʁoˈliːʁə ɪç ˈjeːdn̩ taɪ̯l ʃʁɪt fyːɐ̯ ʃʁɪt"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_020",
+          "segments": [
+            {
+              "text": "我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich prüfe die Kamera, das Licht, den Computer, das Netzwerk, die Software-Einstellungen und den ganzen Produktionsprozess.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç ˈpʁyːfə diː ˈkaməʁa | das lɪçt | deːn kɔmˈpjuːtɐ | das ˈnɛt͡sˌvɛʁk | diː ˈsɔftˌvɛːɐ̯ ʔaɪ̯nˌʃtɛlʊŋən ʊnt deːn ˈɡantsn̩ pʁodʊkˈtsi̯oːnspʁoˌtsɛs"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_021",
+          "segments": [
+            {
+              "text": "透過這樣的方式，我可以進行完整的問題排除。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "So kann ich das ganze System prüfen und Probleme lösen.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "zoː kan ɪç das ˈɡantsə zʏsˈteːm ˈpʁyːfn̩ ʊnt pʁoˈbleːmə ˈløːzn̩"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_022",
+          "segments": [
+            {
+              "text": "我的另一個碩士學位來自台灣的龍華科技大學。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Meinen anderen Masterabschluss habe ich an der Lunghwa-Universität in Taiwan gemacht.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈmaɪ̯nən ˈandəʁən ˈmaːstɐʔapʃlʊs ˈhaːbə ɪç an deːɐ̯ ˈlʊŋxwaː ʔunivɛʁziˌtɛːt ɪn ˈtaɪ̯van ɡəˈmaxt"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_023",
+          "segments": [
+            {
+              "text": "我的專業是資訊管理，研究方向是資料科學和數據分析。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Mein Fach war Informationsmanagement. Meine Forschung lag im Bereich Datenwissenschaft und Datenanalyse.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "maɪ̯n fax vaːɐ̯ ɪnfɔʁmaˈtsi̯oːnsˌmɛnɪdʒmənt | ˈmaɪ̯nə ˈfɔʁʃʊŋ laːk ɪm bəˈʁaɪ̯ç ˈdaːtn̩ˌvɪsn̩ʃaft ʊnt ˈdaːtn̩ʔanalyːzə"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_024",
+          "segments": [
+            {
+              "text": "在更早期的工作經驗中，我也從事過 Web 前端和後端開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Früher habe ich auch Front-End- und Back-End-Webentwicklung gemacht.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈfʁyːɐ̯ ˈhaːbə ɪç aʊ̯x ˈfʁɔntˌʔɛnt ʊnt ˈbɛkˌʔɛnt ˈvɛpʔɛntˌvɪklʊŋ ɡəˈmaxt"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_025",
+          "segments": [
+            {
+              "text": "我也有維護 Linux 伺服器和網路環境的經驗。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich habe außerdem Erfahrung mit Linux-Servern und Netzwerkumgebungen.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç ˈhaːbə ˈaʊ̯sɐdeːm ɛɐ̯ˈfaːʁʊŋ mɪt ˈliːnʊksˌzœʁvɐn ʊnt ˈnɛt͡sˌvɛʁkʔʊmɡeːbʊŋən"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_026",
+          "segments": [
+            {
+              "text": "整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Insgesamt verbinde ich KI-Forschung, industrielle Systementwicklung und Problemlösung vor Ort.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈɪnsɡəˌzamt fɛɐ̯ˈbɪndə ɪç kaːˈʔiː ˈfɔʁʃʊŋ | ɪndʊstʁiˈʔɛlə zʏsˈteːmʔɛntˌvɪklʊŋ ʊnt pʁoˈbleːmˌløːzʊŋ foːɐ̯ ʔɔʁt"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_027",
+          "segments": [
+            {
+              "text": "我希望未來能把這些經驗運用在實際工作中。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "In Zukunft möchte ich diese Erfahrungen in meiner Arbeit einsetzen.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪn ˈtsuːkʊnft ˈmœçtə ɪç ˈdiːzə ɛɐ̯ˈfaːʁʊŋən ɪn ˈmaɪ̯nɐ ˈʔaʁbaɪ̯t ˈaɪ̯nˌzɛt͡sn̩"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_028",
+          "segments": [
+            {
+              "text": "我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ich möchte dem Team helfen, die Systemstabilität, die Produktionseffizienz und den praktischen Einsatz von KI zu verbessern.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɪç ˈmœçtə deːm tiːm ˈhɛlfn̩ | diː zʏsˈteːmʃtabiliˌtɛːt | diː pʁodʊkˈtsi̯oːnsʔɛfitsi̯ˌɛnt͡s ʊnt deːn ˈpʁaktɪʃn̩ ˈaɪ̯nzat͡s fɔn kaːˈʔiː tsuː fɛɐ̯ˈbɛsɐn"
+            }
+          ]
+        },
+        {
+          "id": "zh_de_029",
+          "segments": [
+            {
+              "text": "謝謝。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Vielen Dank.",
+              "lang": "de-DE",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ˈfiːlən daŋk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zh-fr",
+      "name": {
+        "zh": "中法對照",
+        "en": "Chinese–French"
+      },
+      "description": {
+        "zh": "逐句中法對照，並附國際音標（IPA）。",
+        "en": "Line-by-line Chinese–French pairs with IPA hints."
+      },
+      "lines": [
+        {
+          "id": "zh_fr_001",
+          "segments": [
+            {
+              "text": "大家好，我是干皓丞。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Bonjour à toutes et à tous. Je m’appelle Haocheng Kan.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "bɔ̃.ʒuʁ a tut e a tus | ʒə ma.pɛl a.o.tʃɛŋ kan"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_002",
+          "segments": [
+            {
+              "text": "很高興今天有機會參加面試。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je suis très heureux d’avoir l’occasion de passer cet entretien aujourd’hui.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə sɥi tʁɛ.z‿ø.ʁø da.vwaʁ lɔ.ka.zjɔ̃ də pa.se sɛ.t‿ɑ̃.tʁə.tjɛ̃ o.ʒuʁ.dɥi"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_003",
+          "segments": [
+            {
+              "text": "我來自台灣桃園。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je viens de Taoyuan, à Taïwan.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə vjɛ̃ də ta.o.jɥan a taj.wan"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_004",
+          "segments": [
+            {
+              "text": "我畢業於北京大學，取得計算機相關專業的碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "J’ai obtenu un master en informatique à l’Université de Pékin.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒe ɔp.tə.ny œ̃ mas.tɛʁ ɑ̃ ɛ̃.fɔʁ.ma.tik a ly.ni.vɛʁ.si.te də pe.kɛ̃"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_005",
+          "segments": [
+            {
+              "text": "我的研究方向主要是人工智慧、醫療影像分析，以及聯邦學習。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Mes principaux domaines de recherche sont l’intelligence artificielle, l’analyse d’images médicales et l’apprentissage fédéré.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "me pʁɛ̃.si.po dɔ.mɛn də ʁə.ʃɛʁʃ sɔ̃ lɛ̃.tɛ.li.ʒɑ̃s aʁ.ti.fi.sjɛl | la.na.liz di.maʒ me.di.kal e la.pʁɑ̃.ti.saʒ fe.de.ʁe"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_006",
+          "segments": [
+            {
+              "text": "這是我的第二個碩士學位。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "C’est mon deuxième master.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "sɛ mɔ̃ dø.zjɛm mas.tɛʁ"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_007",
+          "segments": [
+            {
+              "text": "在研究所期間，我主要研究如何使用人工智慧分析醫療影像。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Pendant mon master, j’ai surtout étudié comment utiliser l’IA pour analyser des images médicales.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "pɑ̃.dɑ̃ mɔ̃ mas.tɛʁ | ʒe syʁ.tu e.ty.dje kɔ.mɑ̃ y.ti.li.ze li.a puʁ a.na.li.ze de.z‿i.maʒ me.di.kal"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_008",
+          "segments": [
+            {
+              "text": "同時，我也重視病患資料和個人隱私的保護。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "J’ai également accordé beaucoup d’importance à la protection des données des patients et de la vie privée.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒe e.ɡal.mɑ̃ a.kɔʁ.de bo.ku dɛ̃.pɔʁ.tɑ̃s a la pʁɔ.tɛk.sjɔ̃ de dɔ.ne de pa.sjɑ̃ e də la vi pʁi.ve"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_009",
+          "segments": [
+            {
+              "text": "除了學術研究之外，我也在富士康參與工業人工智慧專案。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "En plus de la recherche universitaire, j’ai participé à des projets d’IA industrielle chez Foxconn.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ɑ̃ ply də la ʁə.ʃɛʁʃ y.ni.vɛʁ.si.tɛʁ | ʒe paʁ.ti.si.pe a de pʁɔ.ʒɛ di.a ɛ̃.dys.tʁi.ɛl ʃe fɔks.kɔn"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_010",
+          "segments": [
+            {
+              "text": "我的工作主要包括影像檢測、自動化流程，以及相關系統開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Mon travail comprenait principalement le contrôle d’images, l’automatisation et le développement de systèmes.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "mɔ̃ tʁa.vaj kɔ̃.pʁə.nɛ pʁɛ̃.si.pal.mɑ̃ lə kɔ̃.tʁol di.maʒ | lo.tɔ.ma.ti.za.sjɔ̃ e lə de.vlɔp.mɑ̃ də sis.tɛm"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_011",
+          "segments": [
+            {
+              "text": "我認為學術研究和工業應用之間有一些明顯的差異。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je pense qu’il existe des différences claires entre la recherche universitaire et les applications industrielles.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə pɑ̃s kil ɛɡ.zist de di.fe.ʁɑ̃s klɛʁ ɑ̃tʁ la ʁə.ʃɛʁʃ y.ni.vɛʁ.si.tɛʁ e le.z‿a.pli.ka.sjɔ̃ ɛ̃.dys.tʁi.ɛl"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_012",
+          "segments": [
+            {
+              "text": "學術研究比較重視新的方法、模型表現，以及資料隱私。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Dans la recherche, les nouvelles méthodes, la performance des modèles et la protection des données sont très importantes.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "dɑ̃ la ʁə.ʃɛʁʃ | le nu.vɛl me.tɔd | la pɛʁ.fɔʁ.mɑ̃s de mɔ.dɛl e la pʁɔ.tɛk.sjɔ̃ de dɔ.ne sɔ̃ tʁɛ.z‿ɛ̃.pɔʁ.tɑ̃t"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_013",
+          "segments": [
+            {
+              "text": "工業現場則更重視系統穩定性、執行速度，以及實際的應用效果。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Dans l’industrie, la stabilité du système, la vitesse d’exécution et les résultats pratiques sont plus importants.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "dɑ̃ lɛ̃.dys.tʁi | la sta.bi.li.te dy sis.tɛm | la vi.tɛs dɛɡ.ze.ky.sjɔ̃ e le ʁe.zyl.ta pʁa.tik sɔ̃ ply.z‿ɛ̃.pɔʁ.tɑ̃"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_014",
+          "segments": [
+            {
+              "text": "我們也需要考慮有限的硬體資源和實際的生產環境。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Nous devons aussi tenir compte des ressources matérielles limitées et des conditions réelles de production.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "nu də.vɔ̃ o.si tə.niʁ kɔ̃t de ʁə.suʁs ma.te.ʁjɛl li.mi.te e de kɔ̃.di.sjɔ̃ ʁe.ɛl də pʁɔ.dyk.sjɔ̃"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_015",
+          "segments": [
+            {
+              "text": "最重要的是，要讓人工智慧真正能夠在生產線上運作。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Le plus important est de faire fonctionner l’IA sur une ligne de production.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "lə ply.z‿ɛ̃.pɔʁ.tɑ̃ ɛ də fɛʁ fɔ̃k.sjɔ.ne li.a syʁ yn liɲ də pʁɔ.dyk.sjɔ̃"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_016",
+          "segments": [
+            {
+              "text": "在技術方面，我主要使用 Python、C#，以及相關的影像處理工具。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Sur le plan technique, j’utilise surtout Python, C Sharp et des outils de traitement d’image.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "syʁ lə plɑ̃ tɛk.nik | ʒy.ti.liz syʁ.tu paɪ.tɔn | si ʃaʁp e de zu.ti də tʁɛt.mɑ̃ di.maʒ"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_017",
+          "segments": [
+            {
+              "text": "在工作中，我不只負責軟體和人工智慧模型的開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Au travail, je ne m’occupe pas seulement du développement de logiciels et de modèles d’IA.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "o tʁa.vaj | ʒə nə mɔ.kyp pa sœl.mɑ̃ dy de.vlɔp.mɑ̃ də lɔ.ʒi.sjɛl e də mɔ.dɛl di.a"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_018",
+          "segments": [
+            {
+              "text": "我也經常需要找出系統真正的問題。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je dois aussi souvent trouver la vraie cause des problèmes du système.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə dwa o.si su.vɑ̃ tʁu.ve la vʁɛ koz de pʁɔ.blɛm dy sis.tɛm"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_019",
+          "segments": [
+            {
+              "text": "例如，當影像檢測結果出現異常時，我會逐一檢查不同的部分。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Par exemple, quand le résultat du contrôle d’image est anormal, je vérifie chaque partie étape par étape.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "paʁ ɛɡ.zɑ̃pl | kɑ̃ lə ʁe.zyl.ta dy kɔ̃.tʁol di.maʒ ɛ.t‿a.nɔʁ.mal | ʒə ve.ʁi.fi ʃak paʁ.ti e.tap paʁ e.tap"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_020",
+          "segments": [
+            {
+              "text": "我會檢查相機、光源、電腦、網路、軟體設定，以及整個生產流程。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je vérifie la caméra, l’éclairage, l’ordinateur, le réseau, les paramètres du logiciel et tout le processus de production.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə ve.ʁi.fi la ka.me.ʁa | le.klɛ.ʁaʒ | lɔʁ.di.na.tœʁ | lə ʁe.zo | le pa.ʁa.mɛtʁ dy lɔ.ʒi.sjɛl e tu lə pʁɔ.se.sys də pʁɔ.dyk.sjɔ̃"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_021",
+          "segments": [
+            {
+              "text": "透過這樣的方式，我可以進行完整的問題排除。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "De cette façon, je peux vérifier tout le système et résoudre les problèmes.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "də sɛt fa.sɔ̃ | ʒə pø ve.ʁi.fi.je tu lə sis.tɛm e ʁe.zudʁ le pʁɔ.blɛm"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_022",
+          "segments": [
+            {
+              "text": "我的另一個碩士學位來自台灣的龍華科技大學。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "J’ai obtenu mon autre master à l’Université des sciences et technologies de Lunghwa, à Taïwan.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒe ɔp.tə.ny mɔ̃ no.tʁə mas.tɛʁ a ly.ni.vɛʁ.si.te de sjɑ̃s e tɛk.nɔ.lɔ.ʒi də lʊŋ.xwa a taj.wan"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_023",
+          "segments": [
+            {
+              "text": "我的專業是資訊管理，研究方向是資料科學和數據分析。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Ma spécialité était la gestion de l’information. Mes recherches portaient sur la science des données et l’analyse des données.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ma spe.sja.li.te e.tɛ la ʒɛs.tjɔ̃ də lɛ̃.fɔʁ.ma.sjɔ̃ | me ʁə.ʃɛʁʃ pɔʁ.tɛ syʁ la sjɑ̃s de dɔ.ne e la.na.liz de dɔ.ne"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_024",
+          "segments": [
+            {
+              "text": "在更早期的工作經驗中，我也從事過 Web 前端和後端開發。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Avant cela, j’ai aussi travaillé dans le développement web front-end et back-end.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "a.vɑ̃ sə.la | ʒe o.si tʁa.va.je dɑ̃ lə de.vlɔp.mɑ̃ wɛb fʁɔnt ɛnd e bak ɛnd"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_025",
+          "segments": [
+            {
+              "text": "我也有維護 Linux 伺服器和網路環境的經驗。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "J’ai également de l’expérience dans la maintenance de serveurs Linux et d’environnements réseau.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒe e.ɡal.mɑ̃ də lɛk.spe.ʁjɑ̃s dɑ̃ la mɛ̃.tə.nɑ̃s də sɛʁ.vœʁ li.nyks e dɑ̃.vi.ʁɔn.mɑ̃ ʁe.zo"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_026",
+          "segments": [
+            {
+              "text": "整體而言，我的背景結合了人工智慧研究、工業系統開發，以及現場問題排除能力。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Dans l’ensemble, mon parcours combine la recherche en IA, le développement de systèmes industriels et la résolution de problèmes sur site.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "dɑ̃ lɑ̃.sɑ̃bl | mɔ̃ paʁ.kuʁ kɔ̃.bin la ʁə.ʃɛʁʃ ɑ̃ i.a | lə de.vlɔp.mɑ̃ də sis.tɛm ɛ̃.dys.tʁi.ɛl e la ʁe.zɔ.ly.sjɔ̃ də pʁɔ.blɛm syʁ sit"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_027",
+          "segments": [
+            {
+              "text": "我希望未來能把這些經驗運用在實際工作中。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "À l’avenir, je souhaite utiliser ces expériences dans mon travail.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "a la.və.niʁ | ʒə swɛt y.ti.li.ze se.z‿ɛk.spe.ʁjɑ̃s dɑ̃ mɔ̃ tʁa.vaj"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_028",
+          "segments": [
+            {
+              "text": "我也希望能協助團隊提升系統穩定性、生產效率，以及人工智慧的實際應用。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je souhaite aussi aider l’équipe à améliorer la stabilité des systèmes, l’efficacité de la production et l’utilisation pratique de l’IA.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə swɛt o.si e.de le.kip a a.me.ljɔ.ʁe la sta.bi.li.te de sis.tɛm | le.fi.ka.si.te də la pʁɔ.dyk.sjɔ̃ e ly.ti.li.za.sjɔ̃ pʁa.tik də li.a"
+            }
+          ]
+        },
+        {
+          "id": "zh_fr_029",
+          "segments": [
+            {
+              "text": "謝謝。",
+              "lang": "zh-TW",
+              "role": "primary"
+            },
+            {
+              "text": "Je vous remercie.",
+              "lang": "fr-FR",
+              "role": "translation"
+            }
+          ],
+          "hints": [
+            {
+              "type": "ipa",
+              "text": "ʒə vu ʁə.mɛʁ.si"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

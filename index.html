@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="polyLinguatts — multilingual interview script practice with Web Speech API TTS."
+    />
+    <title>polyLinguatts — 多語朗讀練習</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="./">
+          <span class="brand__mark">polyLingua</span><span class="brand__tts">tts</span>
+        </a>
+        <div class="lang-switch" role="group" aria-label="UI language">
+          <button type="button" data-ui-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-ui-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-brand">
+        <p class="hero__tag" data-i18n="tagline">多語講稿 · 分段朗讀</p>
+        <p class="hero__brand" id="hero-brand">
+          <span class="brand__mark">polyLingua</span><span class="brand__tts">tts</span>
+        </p>
+        <h1 class="hero__headline" data-i18n="headline">一句一句練，母語發音直接說。</h1>
+        <p class="hero__lead" data-i18n="lead">
+          從 JSON 載入中／英／日／德／法對照講稿，點擊朗讀即可用瀏覽器原生語音依語種發聲。
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" id="cta-start" href="#workspace" data-i18n="ctaStart"
+            >開始練習</a
+          >
+          <a class="btn btn--ghost" id="cta-docs" href="./README.zh-TW.md" data-i18n="ctaDocs"
+            >查看文件</a
+          >
+        </div>
+      </section>
+
+      <main id="workspace" class="workspace">
+        <div id="banner" class="banner" hidden></div>
+
+        <p class="workspace__speaker"><span id="meta-speaker">—</span></p>
+
+        <section class="panel" aria-label="Script workspace">
+          <div class="panel__toolbar">
+            <div>
+              <p class="panel__label" data-i18n="tracks">語言軌道</p>
+              <div id="track-nav" class="track-nav" role="tablist"></div>
+            </div>
+            <div class="controls">
+              <span id="status-badge" class="status-badge" hidden></span>
+              <label class="rate-control">
+                <span data-i18n="rate">語速</span>
+                <input id="rate" type="range" min="0.6" max="1.4" step="0.1" value="1" />
+                <span id="rate-value">1.0×</span>
+              </label>
+              <div id="play-scope" class="play-scope" role="group" aria-label="Play scope"></div>
+              <button type="button" class="btn btn--ghost" id="btn-stop" data-i18n="stop">
+                停止
+              </button>
+            </div>
+          </div>
+          <p id="track-desc" class="panel__desc"></p>
+          <div id="script-panel"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p data-i18n="footer">零後端 · Web Speech API · 資料來自 script.json</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "polylinguatts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multilingual interview script practice with Web Speech API TTS",
+  "scripts": {
+    "build:data": "node scripts/build-json.mjs",
+    "start": "npx --yes serve -l 5173 .",
+    "dev": "npm run build:data && npm start"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "Apache-2.0"
+}
